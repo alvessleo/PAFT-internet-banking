@@ -77,27 +77,33 @@
                     </div>
 
                     <div class="square1">
-                        <div class="valor-square1">
-                            <p>Insira o valor desejado</p>
-                            <hr>
-                            <input type="text" placeholder="Ex: R$ 10.500,00" required>
-                        </div>  
-                        <div class="parcelas-square1">
-                            <p>Quantidade de parcelas</p>
-                            <hr>
-                            <select name="parcelas" id="parcelas"></select>
-                        </div>  
-                        <div class="result-card">
-                            <img src="../assets/bradesco-simple-red.png">
-                            <div class="info-result">
-                                <p>Dinheiro liberado em até 72h</p>
-                                <div class="taxa">
-                                    <p><span id='parcelas-selected'>00</span>x &ensp; R$<span id="per-month"></span></p>
-                                    <p>Taxa 3 a.m</p>
+                        <div class="container">
+                            <div class="envelope">
+                                <div class="valor-square1">
+                                    <p>Insira o valor desejado</p>
+                                    <hr>
+                                    <input type="text" placeholder="Ex: R$ 10.500,00" required>
+                                </div>  
+                                <div class="parcelas-square1">
+                                    <p>Quantidade de parcelas</p>
+                                    <hr>
+                                    <select name="parcelas" id="parcelas"></select>
+                                </div>  
+                            </div>
+                            
+                            <div class="result-card">
+                                <img src="../assets/bradesco-simple-red.png">
+                                <div class="info-result">
+                                    <p>Dinheiro liberado em até 72h</p>
+                                    <div class="taxa">
+                                        <p><span id='parcelas-selected'>00</span>x &ensp; R$<span id="per-month"></span></p>
+                                        <p>Taxa 3 a.m</p>
+                                    </div>
+                                    <p class="type-debit">Débito em conta corrente</p>
                                 </div>
-                                <p class="type-debit">Débito em conta corrente</p>
                             </div>
                         </div>
+                        
 
                         <button id="next">Prosseguir</button>
                     </div>

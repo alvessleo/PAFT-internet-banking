@@ -150,6 +150,8 @@ hr{
                         margin-bottom: 2em;
                         padding: 5px 1em;
                         transition: 0.5s;
+                        color: $color-dark-grey;
+                        cursor: pointer;
 
                         &:focus{
                             outline: none;
@@ -214,6 +216,8 @@ hr{
                         margin-bottom: 2em;
                         padding: 5px 1em;
                         transition: 0.5s;
+                        color: $color-dark-grey;
+                        cursor: pointer;
 
                         &:focus{
                             outline: none;
@@ -285,6 +289,63 @@ hr{
                         }
                     }
                 }
+
+                .square1{
+                    padding: 2em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .container{
+                        display: flex;
+                        width: 100%;
+                        .envelope{
+                            margin-right: 1em;
+                            width: 100%;
+                            .valor-square1{
+                                width: 100%;
+                            }
+                        }
+                        
+                        
+                        .result-card{
+                            width: 100%;
+                        }
+                    }
+                   
+                    #next{
+                        justify-self: center;
+                        max-width: 240px;
+                    }
+                }
+
+                .square2{
+                    padding: 2em;
+                    display: flex;
+                    flex-direction: column;
+                    .day-square2{
+                        #dias{
+                            width: 43%;
+                        }
+                    }
+                    .finish{
+                        margin: 0 auto;
+                        max-width: 240px;
+                    }
+                }
+
+                .confirm{
+                    padding: 2em;
+                    display: flex;
+                    flex-direction: column;
+                    hr{
+                        z-index: 9;
+                    }
+                    button{
+                        max-width: 240px;
+                        margin: 0 auto;
+                    }
+                }
             }
         }
     }
@@ -302,6 +363,29 @@ hr{
 
                 .info-emprestimo{
                     padding: 2em 3em;
+                }
+
+                .square1{
+                    padding: 3em 3em 2em 3em;
+
+                    .container{
+                        margin-bottom: 1em;
+                    }
+                }
+
+                .square2{
+                    padding: 3em 3em 2em 3em;
+                    
+                    .finish{
+                        margin-top: 1em;
+                    }
+                }
+
+                .confirm{
+                    padding: 3em 3em 2em 3em;
+                    button{
+                        margin-top: 1em;
+                    }
                 }
             }
         }
