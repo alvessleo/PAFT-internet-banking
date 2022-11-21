@@ -1,0 +1,130 @@
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ececec;
+}
+
+hr {
+  background-color: #515151;
+  opacity: 50%;
+  margin-bottom: 1em;
+  z-index: -9;
+}
+
+.main-section .container-main .wrapper {
+  margin: 1em;
+}
+.main-section .container-main .wrapper .back {
+  display: flex;
+  align-items: center;
+  color: #CC092F;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+.main-section .container-main .wrapper .back .bx {
+  font-size: 1.5em;
+}
+.main-section .container-main .wrapper .info-account {
+  background-color: #fff;
+  padding: 1em;
+}
+.main-section .container-main .wrapper .info-account .info-row {
+  display: flex;
+  flex-direction: column;
+}
+.main-section .container-main .wrapper .info-account .info-row .label h1 {
+  font-weight: 400;
+}
+.main-section .container-main .wrapper .info-account .info-row .label p {
+  color: #515151;
+  margin-bottom: 1em;
+}
+.main-section .container-main .wrapper .info-account .info-row button {
+  background-color: #CC092F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+.main-section .container-main .wrapper .info-account .info-saldo {
+  padding-left: 1em;
+}
+.main-section .container-main .wrapper .info-account .info-saldo .available {
+  margin-bottom: 1em;
+}
+.main-section .container-main .wrapper .info-account .info-saldo .available #saldo {
+  color: #3c8e3b;
+}
+.main-section .container-main .wrapper .info-account .info-saldo .limit p:nth-of-type(2) {
+  color: #3c8e3b;
+}
+.main-section .container-main .wrapper .actions {
+  display: grid;
+  gap: 1em;
+  margin-top: 1em;
+}
+.main-section .container-main .wrapper .actions .item {
+  background-color: #fff;
+  padding: 1em;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-section .container-main .wrapper .actions .item img {
+  width: 60px;
+  margin-bottom: 2em;
+}
+.main-section .container-main .wrapper .actions .item .pix {
+  width: 50px;
+}
+.main-section .container-main .wrapper .actions .item p:nth-of-type(1) {
+  font-weight: 600;
+}
+.main-section .container-main .wrapper .actions .item p:nth-of-type(2) {
+  color: #CC092F;
+  display: flex;
+  align-items: center;
+}
+.main-section .container-main .wrapper .my-cards {
+  background-color: #fff;
+  padding: 1em;
+  margin-top: 1em;
+}
+.main-section .container-main .wrapper .my-cards h1 {
+  font-weight: 400;
+}
+.main-section .container-main .wrapper .my-cards hr {
+  margin-top: 1em;
+}
+.main-section .container-main .wrapper .my-cards .btn-cards button {
+  width: 100%;
+  background-color: #CC092F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+}
+.main-section .container-main .wrapper .my-cards .btn-cards button:nth-of-type(2) {
+  background-color: #fff;
+  border: 1.5px solid #CC092F;
+  color: #CC092F;
+  font-weight: 400;
+  margin-top: 1em;
+}
+.main-section .container-main .wrapper .messages {
+  background-color: #fff;
+  padding: 1em;
+  margin-top: 1em;
+  color: #515151;
+  text-align: center;
+}/*# sourceMappingURL=user_page.css.map */

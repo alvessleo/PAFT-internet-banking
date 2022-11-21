@@ -21,6 +21,7 @@ header nav .desk-list {
   display: none;
 }
 header nav .nav-list {
+  z-index: 999;
   position: absolute;
   top: 80px;
   width: 100vw;

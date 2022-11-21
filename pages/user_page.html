@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/re_usable/menu.css">
+    <link rel="stylesheet" href="../css/user_page/user_page.css">
     <title>User Page</title>
 </head>
 <body>
@@ -48,7 +49,68 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section class="main-section">
+            <div class="container-main">
+                <div class="wrapper">
 
+                    <a class="back" href="#"><i class='bx bx-chevron-left'></i>Voltar</a>
+
+                    <div class="info-account">
+                        <div class="info-row">
+                            <div class="label">
+                                <h1>Olá, <span id="user_name">Leonardo Fernandes Alves</span></h1>
+                                <p>Agência <span id="agencia">0000</span> conta <span id="conta">00000-0</span></p>
+                            </div>
+                            <button>Ver extrato</button>
+                        </div>
+                        <hr>
+                        <div class="info-saldo">
+                            <div class="available">
+                                <p>Saldo disponível</p>
+                                <p id="saldo">R$ 526,00</p>
+                            </div>
+                            <div class="limit">
+                                <p>Saldo disponível + Limite</p>
+                                <p>R$ 4.526,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <div class="item">
+                            <img src="../assets/emprestimo.png">
+                            <p>Empréstimo</p>
+                            <p>Realizar<i class='bx bx-right-arrow-alt' ></i></p>
+                        </div>
+                        <div class="item">
+                            <img src="../assets/boleto-logo.png">
+                            <p class="boleto-label">Boleto</p>
+                            <p>Pagar<i class='bx bx-right-arrow-alt' ></i></p>
+                        </div>
+                        <div class="item">
+                            <img class="pix" src="../assets/pix.png">
+                            <p>Pix</p>
+                            <p>Pagar<i class='bx bx-right-arrow-alt' ></i></p>
+                        </div>
+                    </div>
+
+                    <div class="my-cards">
+                        <h1>Seus cartões</h1>
+                        <hr>
+                        <div class="btn-cards">
+                            <button>Cartão final <span id="final-card">0000</span></button>
+                            <button>Cartão online</button>
+                        </div>
+                    </div>
+
+                    <div class="messages">
+                        <p>O que está esperando para contratar seu cartão de CRÉDITO? Contrate já!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="../js/menu.js"></script>
 </body>
 </html>
