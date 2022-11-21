@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/re_usable/menu.css">
-    <title>User Page</title>
+    <link rel="stylesheet" href="../css/extrato/extrato.css">
+    <title>Extrato</title>
 </head>
 <body>
     <header>
@@ -48,7 +49,68 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section class="main-section">
+            <div class="container-main">
+                <div class="wrapper">
 
+                    <a class="back" href="#"><i class='bx bx-chevron-left'></i>Voltar</a>
+
+                    <div class="info-extrato">
+                        <div class="info-row">
+                            <div class="label">
+                                <h1>Extrato</h1>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="info-saldo">
+                            <div class="available">
+                                <p>Saldo disponível</p>
+                                <p id="saldo">R$ 526,00</p>
+                            </div>
+                            <div class="limit">
+                                <p>Saldo disponível + Limite</p>
+                                <p>R$ 4.526,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="report">
+                        <table>
+                            <tr>
+                                <th>Dia</th>
+                                <th>Descrição</th>
+                                <th>Valor</th>
+                            </tr>
+                            <tr>
+                                <td>16/11/2022</td>
+                                <td>Compra dispositivo eletrônico</td>
+                                <td class="valor">R$ <span id="pos-neg">-</span><span id="quantia">200,00</span></td>
+                            </tr>
+                            <tr>
+                                <td>16/11/2022</td>
+                                <td>Compra dispositivo eletrônico</td>
+                                <td class="valor">R$ <span id="pos-neg">-</span><span id="quantia">200,00</span></td>
+                            </tr>
+                            <tr>
+                                <td>16/11/2022</td>
+                                <td>Compra dispositivo eletrônico</td>
+                                <td class="valor">R$ <span id="pos-neg">-</span><span id="quantia">200,00</span></td>
+                            </tr>
+                            <tr>
+                                <td>16/11/2022</td>
+                                <td>Compra dispositivo eletrônico</td>
+                                <td class="valor">R$ <span id="pos-neg">+</span><span id="quantia">200,00</span></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="../js/menu.js"></script>
+    <script src="../js/extrato.js"></script>
 </body>
 </html>
