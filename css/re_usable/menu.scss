@@ -1,0 +1,212 @@
+// ROOT
+
+$color-primary: #CC092F;
+$hover-white-color: #e8b2b2;
+$color-white: #fff;
+$color-black: #000;
+$color-dark-grey: #515151;
+$color-light-grey: #E3E3E3;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    background-color: $color-primary;
+    padding: 25px 0px;
+
+    nav{
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        .desk-list{
+            display: none;
+        }
+
+        .nav-list{
+            position: absolute;
+            top: 80px;
+            width: 100vw;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in;
+            background: $color-primary;
+            margin-bottom: 1em;
+
+            .first-li{
+                margin-top: 3em;
+            }
+
+        }
+
+        .active{
+            transform: translateX(0%);
+            .line1{
+                transform: rotate(-45deg) translate(-8px, 8px);
+            }
+            .line2{
+                opacity: 0;
+            }
+            .line3{
+                transform: rotate(45deg) translate(-5px, -7px);
+            }
+
+        }
+
+        .logo{
+            width: 135px;
+            transform: translateY(-5px);
+            padding-left: 25px;
+        }
+
+
+        .desktop{
+            display: none;
+        }
+
+        ul{
+
+            li{
+                
+                list-style: none;
+                margin-right: 0em;
+                margin-bottom: 4em;
+                a{
+                    text-decoration: none;
+                    color: $color-white;
+                    transition: 0.5s;
+                    &:hover{
+                        color: $hover-white-color;
+                    }
+                }
+                
+                .user-logged{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .user-photo{
+                        width: 37px;
+                        height: 37px;
+                        border-radius: 100%;
+                        margin-right: 1em;
+                    }
+                    p{
+                        color: $color-white;
+                    }
+                }
+
+                #logout{
+                    text-transform: uppercase;
+                    color: $color-white;
+                    border-radius: 5px;
+                    border: 1.5px solid $color-white;
+                    background-color: $color-primary;
+                    width: 100px;
+                    height: 35px;
+                    transition: .5s;
+
+                    &:hover{
+                        cursor: pointer;
+                        background-color: $color-white;
+                        color: $color-primary;
+                    }
+                }
+
+                .btn-exit{
+                    margin-right: 0em;
+                }
+            }
+
+        }
+
+        .menu{
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            margin-right: 25px;
+            span{
+                width: 28px;
+                height: 3px;
+                background: $color-white;
+                margin: 3.5px;
+                transition: 0.3s;
+            }   
+
+        }
+    }
+}
+
+// RESPONSIVIDADE
+
+@media only screen and (min-width: 768px){
+    header{
+    
+        nav{
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+
+            .nav-list{
+                display: none;
+            }
+
+            .desk-list{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                li{
+                    min-width: 80px;
+                }
+            }
+
+            .desktop{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                li{
+                    margin-right: 0.9em;
+                    margin-bottom: 0em;
+                }
+            }
+            .menu{
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 920px){
+    header{
+        padding: 25px;
+        nav{
+            .logo{
+                width: 175px;
+                height: 39px;
+            }
+
+            ul{
+                li{
+                    margin-right: 3em;
+                }
+            }
+        }
+    }
+}
