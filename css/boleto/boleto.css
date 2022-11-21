@@ -32,30 +32,154 @@ hr {
 .main-section .container-main .wrapper .back:hover {
   color: #660518;
 }
-.main-section .container-main .wrapper .info-extrato {
+.main-section .container-main .wrapper .info-boleto {
   background-color: #fff;
   padding: 1em;
   margin-bottom: 1em;
 }
-.main-section .container-main .wrapper .info-extrato .info-row {
+.main-section .container-main .wrapper .info-boleto .info-row {
   display: flex;
   flex-direction: column;
 }
-.main-section .container-main .wrapper .info-extrato .info-row .label h1 {
+.main-section .container-main .wrapper .info-boleto .info-row .label h1 {
   font-weight: 400;
   margin-bottom: 1em;
 }
-.main-section .container-main .wrapper .info-extrato .info-saldo {
-  padding-left: 1em;
+.main-section .container-main .wrapper .info-boleto .info-options {
+  padding-left: 0em;
 }
-.main-section .container-main .wrapper .info-extrato .info-saldo .available {
+.main-section .container-main .wrapper .info-boleto .info-options p {
   margin-bottom: 1em;
 }
-.main-section .container-main .wrapper .info-extrato .info-saldo .available #saldo {
-  color: #3c8e3b;
+.main-section .container-main .wrapper .info-boleto .info-options .btn-options button {
+  width: 100%;
+  height: 39px;
+  background-color: #CC092F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  padding: 0 15px;
 }
-.main-section .container-main .wrapper .info-extrato .info-saldo .limit p:nth-of-type(2) {
+.main-section .container-main .wrapper .info-boleto .info-options .btn-options button:hover {
+  background-color: #660518;
+}
+.main-section .container-main .wrapper .info-boleto .info-options .btn-options button:nth-of-type(1) {
+  margin-bottom: 1em;
+}
+.main-section .container-main .wrapper .input-codigo {
+  background-color: #fff;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.main-section .container-main .wrapper .input-codigo p {
+  margin-bottom: 1em;
+}
+.main-section .container-main .wrapper .input-codigo hr {
+  z-index: 9;
+}
+.main-section .container-main .wrapper .input-codigo input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #515151;
+  margin-bottom: 2em;
+  padding: 5px 0em;
+  transition: 0.5s;
+}
+.main-section .container-main .wrapper .input-codigo input:focus {
+  outline: none;
+  border-bottom: 2px solid #CC092F;
+}
+.main-section .container-main .wrapper .input-codigo button {
+  background-color: #CC092F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  height: 39px;
+  margin: 0 auto;
+  width: 100%;
+}
+.main-section .container-main .wrapper .input-codigo button:hover {
+  background-color: #660518;
+}
+.main-section .container-main .wrapper .dados-pag {
+  background-color: #fff;
+  padding: 1em;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.main-section .container-main .wrapper .dados-pag hr {
+  margin: 1em 0;
+  z-index: 9;
+}
+.main-section .container-main .wrapper .dados-pag .item {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+.main-section .container-main .wrapper .dados-pag .item p:nth-of-type(1) {
+  font-weight: 500;
+}
+.main-section .container-main .wrapper .dados-pag .item p:nth-of-type(2) {
+  font-weight: 300;
+  color: #515151;
+}
+.main-section .container-main .wrapper .dados-pag button {
+  background-color: #CC092F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  height: 39px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-section .container-main .wrapper .dados-pag button:hover {
+  background-color: #660518;
+}
+.main-section .container-main .wrapper .confirm {
+  background-color: #fff;
+  padding: 1em;
+  margin-top: 1em;
+}
+.main-section .container-main .wrapper .confirm p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.main-section .container-main .wrapper .confirm p i {
   color: #3c8e3b;
+  margin-right: 0.5em;
+  font-size: 1.5em;
+}
+.main-section .container-main .wrapper .confirm button {
+  background-color: #CC092F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  width: 100%;
+  height: 39px;
+}
+.main-section .container-main .wrapper .confirm button:hover {
+  background-color: #660518;
+}
+.main-section .container-main .wrapper .confirm button:nth-of-type(2) {
+  margin-top: 1em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -65,25 +189,62 @@ hr {
   .main-section .container-main .wrapper .back {
     font-weight: 600;
   }
-  .main-section .container-main .wrapper .info-extrato {
+  .main-section .container-main .wrapper .info-boleto {
     padding: 2em;
   }
-  .main-section .container-main .wrapper .info-extrato .info-row {
+  .main-section .container-main .wrapper .info-boleto .info-row {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-  .main-section .container-main .wrapper .info-extrato .info-row button {
-    width: 210px;
-    padding: 10px 0px;
+  .main-section .container-main .wrapper .info-boleto .info-options {
+    width: 100%;
   }
-  .main-section .container-main .wrapper .info-extrato .info-saldo {
-    margin-left: 1.5em;
+  .main-section .container-main .wrapper .info-boleto .info-options .btn-options {
     display: flex;
   }
-  .main-section .container-main .wrapper .info-extrato .info-saldo .available {
+  .main-section .container-main .wrapper .info-boleto .info-options .btn-options button {
+    width: 240px;
+  }
+  .main-section .container-main .wrapper .info-boleto .info-options .btn-options button:nth-of-type(1) {
     margin-bottom: 0em;
-    margin-right: 7em;
+    margin-right: 1em;
+  }
+  .main-section .container-main .wrapper .input-codigo {
+    padding: 2em;
+  }
+  .main-section .container-main .wrapper .input-codigo input {
+    width: 60%;
+  }
+  .main-section .container-main .wrapper .input-codigo button {
+    margin-top: 1em;
+    width: 240px;
+  }
+  .main-section .container-main .wrapper .dados-pag {
+    padding: 2em;
+  }
+  .main-section .container-main .wrapper .dados-pag .item {
+    margin-bottom: 1.5em;
+    margin-left: 1.5em;
+  }
+  .main-section .container-main .wrapper .dados-pag .item:nth-of-type(1) {
+    margin-top: 1.5em;
+  }
+  .main-section .container-main .wrapper .dados-pag button {
+    margin-top: 0.5em;
+    width: 240px;
+  }
+  .main-section .container-main .wrapper .confirm {
+    padding: 2em;
+  }
+  .main-section .container-main .wrapper .confirm .buttons button {
+    width: 240px;
+  }
+  .main-section .container-main .wrapper .confirm .buttons button:nth-of-type(1) {
+    margin-right: 1em;
+  }
+  .main-section .container-main .wrapper .confirm .buttons button:nth-of-type(2) {
+    width: 55px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -96,7 +257,7 @@ hr {
     width: 100%;
     max-width: 1130px;
   }
-  .main-section .container-main .wrapper .info-extrato {
+  .main-section .container-main .wrapper .info-boleto {
     padding: 2em 3em;
   }
 }/*# sourceMappingURL=boleto.css.map */

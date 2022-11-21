@@ -69,7 +69,7 @@ hr{
             }
 
 
-            .info-extrato{
+            .info-boleto{
                 background-color: $color-white;
                 padding: 1em;
                 margin-bottom: 1em;
@@ -86,23 +86,121 @@ hr{
                     }
                 }
 
-                .info-saldo{
-                    padding-left: 1em;
+                .info-options{
+                    padding-left: 0em;
                     
-                    .available{
+                    p{
                         margin-bottom: 1em;
-                        #saldo{
-                            color: $color-green;
-                        }
                     }
-                    .limit{
-                        p{
-                            &:nth-of-type(2){
-                                color: $color-green;
+
+                    .btn-options{
+                        button{
+                            width: 100%;
+                            height: 39px;
+                            @include button-red();
+                            padding: 0 15px;
+
+                            &:nth-of-type(1){
+                                margin-bottom: 1em;
+
                             }
                         }
-                        
+                    }
+                }
+            }
 
+            .input-codigo{
+                background-color: $color-white;
+                padding: 1em;
+                display: flex;
+                flex-direction: column;
+
+                p{
+                    margin-bottom: 1em;
+                }
+
+                hr{
+                    z-index: 9;
+                }
+
+                input{
+                    width: 100%;
+                    border: none;
+                    border-bottom: 2px solid $color-dark-grey;
+                    margin-bottom: 2em;
+                    padding: 5px 0em;
+                    transition: 0.5s;
+
+                    &:focus{
+                        outline: none;
+                        border-bottom: 2px solid $color-primary;
+                    }
+                }
+
+                button{
+                    @include button-red();
+                    height: 39px;
+                    margin: 0 auto;
+                    width: 100%;
+                }
+            }
+
+            .dados-pag{
+                background-color: $color-white;
+                padding: 1em;
+                margin-top: 1em;
+                display: flex;
+                flex-direction: column;
+
+                hr{
+                    margin: 1em 0;
+                    z-index: 9;
+                }
+
+                .item{
+                    margin-bottom: 1em;
+                    margin-left: 1em;
+                    p{
+                        &:nth-of-type(1){
+                            font-weight: 500;
+                        }
+                        &:nth-of-type(2){
+                            font-weight: 300;
+                            color: $color-dark-grey;
+                        }
+                    }
+                }
+                button{
+                    @include button-red();
+                    height: 39px;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+
+            .confirm{
+                background-color: $color-white;
+                padding: 1em;
+                margin-top: 1em;
+
+                p{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 1em;
+                    i{
+                        color: $color-green;
+                        margin-right: .5em;
+                        font-size: 1.5em
+                    }
+                }
+
+                button{
+                    @include button-red();
+                    width: 100%;
+                    height: 39px;
+                    
+                    &:nth-of-type(2){
+                        margin-top: 1em;
                     }
                 }
             }
@@ -121,24 +219,73 @@ hr{
                 .back{
                     font-weight: 600;
                 }
-                .info-extrato{
+                .info-boleto{
                     padding: 2em;
                     .info-row{
                         flex-direction: row;
                         align-items: center;
                         justify-content: space-between;
-                        button{
-                            width: 210px;
-                            padding: 10px 0px;
+                    }
+                    .info-options{
+                        width: 100%;
+                        .btn-options{
+                            display: flex;
+
+                            button{
+                                width: 240px;
+                                &:nth-of-type(1){
+                                    margin-bottom: 0em;
+                                    margin-right: 1em;
+                                }
+                            }
+
                         }
                     }
-                    .info-saldo{
+                }
+
+                .input-codigo{
+                    padding: 2em;
+                    input{
+                        width: 60%;
+                    }
+                    button{
+                        margin-top: 1em;
+                        width: 240px;
+                    }
+                }
+
+                .dados-pag{
+                    padding: 2em;
+
+                    .item{
+                        margin-bottom: 1.5em;
                         margin-left: 1.5em;
-                        display: flex;
-                        .available{
-                            margin-bottom: 0em;
-                            margin-right: 7em;
+                        &:nth-of-type(1){
+                            margin-top: 1.5em;
                         }
+
+                    }
+                    button{
+                        margin-top: .5em;
+                        width: 240px;
+                    }
+                }
+
+                .confirm{
+                    padding: 2em;
+
+                    .buttons{
+                        button{
+                            width: 240px;
+
+                            &:nth-of-type(1){
+                                margin-right: 1em;
+                            }
+                            &:nth-of-type(2){
+                                width: 55px;
+                            }
+                        }
+
                     }
                 }
             }
@@ -156,7 +303,7 @@ hr{
                 width: 100%;
                 max-width: 1130px;
 
-                .info-extrato{
+                .info-boleto{
                     padding: 2em 3em;
                 }
             }

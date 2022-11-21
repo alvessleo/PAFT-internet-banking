@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/re_usable/menu.css">
-    <title>User Page</title>
+    <link rel="stylesheet" href="../css/boleto/boleto.css">
+    <title>Boleto</title>
 </head>
 <body>
     <header>
@@ -48,7 +49,65 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section class="main-section">
+            <div class="container-main">
+                <div class="wrapper">
 
+                    <a class="back" href="#"><i class='bx bx-chevron-left'></i>Voltar</a>
+
+                    <div class="info-boleto">
+                        <div class="info-row">
+                            <div class="label">
+                                <h1>Pagamento</h1>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="info-options">
+                            <p>Para prosseguir, selecione uma das opções a baixo</p>
+                            <div class="btn-options">
+                                <button>Digitar código de barras</button>
+                                <button>Escanear código de barras</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-codigo">
+                        <p>Insira o número do código de barras</p>
+                        <hr>
+                        <input type="text" placeholder=" Ex: 00000.00000 00000.00000 00000.00000 0 0000" required>
+                        <button>Prosseguir</button>
+                    </div>
+
+                    <div class="dados-pag">
+                        <p>Dados do pagamento</p>
+                        <hr>
+                        <div class="item">
+                            <p>Valor</p>
+                            <p>R$ 150,00</p>
+                        </div>
+                        <div class="item">
+                            <p>Vencimento</p>
+                            <p>30/11/2022</p>
+                        </div>
+                        <div class="item">
+                            <p>Beneficiário</p>
+                            <p>Mark Joselli</p>
+                        </div>
+                        <button>Pagar</button>
+                    </div>
+
+                    <div class="confirm">
+                        <p><i class='bx bxs-check-circle'></i>Pagamento realizado com sucesso!</p>
+                        <hr>
+                        <div class="buttons">
+                            <button>Realizar outro pagamento</button><button>Sair</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="../js/menu.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@ Orientation:
 1. [ ] Tela de login;
 2. [x] Tela de extrato;
 3. [x] Tela de empréstimo;
-4. [ ] Tela de pagamento de boleto;
+4. [x] Tela de pagamento de boleto;
 5. [x] O sistema deverá ter um menu sanduiche/hamburger.
 6. [x] Ter pelo menos uma classe (POO) sendo utilizada.
 7. [ ] Fazer uso de programação assíncrona (primises/async/await).
