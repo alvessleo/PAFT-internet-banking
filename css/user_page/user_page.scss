@@ -174,3 +174,79 @@ hr{
         }
     }
 }
+
+// RESPONSIVIDADE
+
+@media only screen and (min-width: 768px){
+    .main-section{
+        .container-main{
+            .wrapper{
+                margin: 1em 2em;
+                .info-account{
+                    padding: 2em;
+                    .info-row{
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        button{
+                            width: 210px;
+                            padding: 10px 0px;
+                        }
+                    }
+                    .info-saldo{
+                        margin-left: 1.5em;
+                        display: flex;
+                        .available{
+                            margin-bottom: 0em;
+                            margin-right: 7em;
+                        }
+                    }
+                }
+
+                .actions{
+                    grid-template-areas: 'emp bol'
+                                         'pix pix';
+
+
+                    .item{
+                        padding: 1em 2em;
+                    }
+                    .emp{
+                        grid-area: 'emp';
+                    }
+
+                    .bol{
+                        grid-area: 'bol';
+                    }
+
+                    .pix{
+                        grid-area: 'pix';
+                        max-width: 100%;
+                    }
+                }
+
+                .my-cards{
+                    padding: 2em;
+
+                    .btn-cards{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        width: 500px;
+                        button{
+                            padding: 10px 0px;
+                            
+                            &:nth-of-type(1){
+                                padding: 0px 0px;
+                                margin-right: 1em;
+                            }
+                            &:nth-of-type(2){
+                                margin-top: 0em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
