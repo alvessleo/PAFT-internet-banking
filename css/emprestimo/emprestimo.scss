@@ -69,7 +69,7 @@ hr{
             }
 
 
-            .info-extrato{
+            .info-emprestimo{
                 background-color: $color-white;
                 padding: 1em;
                 margin-bottom: 1em;
@@ -86,24 +86,168 @@ hr{
                     }
                 }
 
-                .info-saldo{
+                .info-available{
                     padding-left: 1em;
                     
                     .available{
                         margin-bottom: 1em;
                         #saldo{
-                            color: $color-green;
+                            color: $color-black;
+                            font-weight: 600;
                         }
                     }
-                    .limit{
-                        p{
-                            &:nth-of-type(2){
-                                color: $color-green;
+                }
+            }
+            .none{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p{
+                    margin: 2em 0em 1em 0em;
+                    text-align: center;
+                    color: $color-dark-grey;
+                    
+                }
+                #next{
+                    @include button-red();
+                    height: 39px;
+                    width: 240px;
+                }
+            }
+
+            .square1{
+                background-color: $color-white;
+                padding: 1em;
+                margin-top: 1em;
+                .valor-square1{
+                    hr{
+                        margin-top: 1em;
+                    }
+                    input{
+                        width: 90%;
+                        border: none;
+                        border-bottom: 2px solid $color-dark-grey;
+                        margin-bottom: 2em;
+                        padding: 5px 0em;
+                        transition: 0.5s;
+
+                        &:focus{
+                            outline: none;
+                            border-bottom: 2px solid $color-primary;
+                        }
+                    }
+                }
+
+                .parcelas-square1{
+                    p{
+                        margin-bottom: 1em;
+                    }
+                    #parcelas{
+                        width: 90%;
+                        border: none;
+                        border-bottom: 2px solid $color-dark-grey;
+                        margin-bottom: 2em;
+                        padding: 5px 1em;
+                        transition: 0.5s;
+
+                        &:focus{
+                            outline: none;
+                            border-bottom: 2px solid $color-primary;
+                        }
+                    }
+                }
+
+                .result-card{
+                    position: relative;
+                    padding: 1em;
+                    border: 1px solid rgba($color: #3a3a3a, $alpha: 0.2);
+                    margin-bottom: 1em;
+                    img{
+                        position: absolute;
+                        width: 20px;
+                        right: 0;
+                        bottom: 0;
+                        transform: translate(-1em, -1em);
+                    }
+
+                    .info-result{
+                        .taxa{
+                            p{
+                                &:nth-of-type(1){
+                                    margin-top: 1em;
+                                }
+
+                                &:nth-of-type(2){
+                                    font-size: 0.8em;
+                                    color: $color-dark-grey;
+                                    margin-bottom: 1em;
+                                }
                             }
                         }
-                        
 
+                        .type-debit{
+                            font-size: .8em;
+                        }
                     }
+                }
+
+                #next{
+                    @include button-red();
+                    width: 100%;
+                    height: 39px;
+                }
+            }
+
+            .square2{
+                background-color: $color-white;
+                padding: 1em;
+                margin-top: 1em;
+                .day-square2{
+                    p{
+                        margin-bottom: 1em;
+                    }
+                    #dias{
+                        width: 90%;
+                        border: none;
+                        border-bottom: 2px solid $color-dark-grey;
+                        margin-bottom: 2em;
+                        padding: 5px 1em;
+                        transition: 0.5s;
+
+                        &:focus{
+                            outline: none;
+                            border-bottom: 2px solid $color-primary;
+                        }
+                    }
+                }
+
+                .finish{
+                    @include button-red();
+                    width: 100%;
+                    height: 39px;
+                }
+            }
+
+            .confirm{
+                margin-top: 1em;
+                background-color: $color-white;
+                padding: 1em;
+                p{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 1em;
+                    i{
+                        color: $color-green;
+                        margin-right: .5em;
+                        font-size: 1.5em
+                    }
+                }
+
+                button{
+                    @include button-red();
+                    width: 100%;
+                    height: 39px;
                 }
             }
         }
@@ -121,7 +265,7 @@ hr{
                 .back{
                     font-weight: 600;
                 }
-                .info-extrato{
+                .info-emprestimo{
                     padding: 2em;
                     .info-row{
                         flex-direction: row;
@@ -132,7 +276,7 @@ hr{
                             padding: 10px 0px;
                         }
                     }
-                    .info-saldo{
+                    .info-available{
                         margin-left: 1.5em;
                         display: flex;
                         .available{
@@ -156,7 +300,7 @@ hr{
                 width: 100%;
                 max-width: 1130px;
 
-                .info-extrato{
+                .info-emprestimo{
                     padding: 2em 3em;
                 }
             }

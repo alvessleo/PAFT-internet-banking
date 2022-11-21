@@ -1,0 +1,165 @@
+// ROOT
+
+$color-primary: #CC092F;
+$hover-white-color: #e8b2b2;
+$hover-red-color: #660518;
+$color-white: #fff;
+$color-black: #000;
+$color-dark-grey: #515151;
+$color-light-grey: #f2f2f2;
+$color-green: #3c8e3b;
+$background-color: #ececec;
+
+
+// REUSABLE
+
+@mixin button-red {
+    background-color: $color-primary;
+    color: $color-white;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color .5s;
+
+    &:hover{
+        background-color: $hover-red-color;
+    }
+}
+
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: $background-color;
+}
+
+hr{
+    background-color: $color-dark-grey;
+    opacity: 50%;
+    margin-bottom: 1em;
+    z-index: -9;
+}
+
+.main-section{
+    .container-main{
+        .wrapper{
+            margin: 1em;
+
+            .back{
+                display: flex;
+                align-items: center;
+                color: $color-primary;
+                font-size: 1em;
+                cursor: pointer;
+                margin-bottom: 1em;
+                transition: .5s;
+
+                .bx{
+                    font-size: 1.5em;
+                }
+
+                &:hover{
+                    color: $hover-red-color;
+                }
+            }
+
+
+            .info-extrato{
+                background-color: $color-white;
+                padding: 1em;
+                margin-bottom: 1em;
+
+                .info-row{
+                    display: flex;
+                    flex-direction: column;
+
+                    .label{
+                        h1{
+                            font-weight: 400;
+                            margin-bottom: 1em
+                        }
+                    }
+                }
+
+                .info-saldo{
+                    padding-left: 1em;
+                    
+                    .available{
+                        margin-bottom: 1em;
+                        #saldo{
+                            color: $color-green;
+                        }
+                    }
+                    .limit{
+                        p{
+                            &:nth-of-type(2){
+                                color: $color-green;
+                            }
+                        }
+                        
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVIDADE
+
+@media only screen and (min-width: 768px){
+    .main-section{
+        .container-main{
+            .wrapper{
+                margin: 1em 2em;
+
+                .back{
+                    font-weight: 600;
+                }
+                .info-extrato{
+                    padding: 2em;
+                    .info-row{
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        button{
+                            width: 210px;
+                            padding: 10px 0px;
+                        }
+                    }
+                    .info-saldo{
+                        margin-left: 1.5em;
+                        display: flex;
+                        .available{
+                            margin-bottom: 0em;
+                            margin-right: 7em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .main-section{
+        .container-main{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .wrapper{
+                width: 100%;
+                max-width: 1130px;
+
+                .info-extrato{
+                    padding: 2em 3em;
+                }
+            }
+        }
+    }
+}

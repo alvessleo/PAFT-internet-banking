@@ -32,30 +32,193 @@ hr {
 .main-section .container-main .wrapper .back:hover {
   color: #660518;
 }
-.main-section .container-main .wrapper .info-extrato {
+.main-section .container-main .wrapper .info-emprestimo {
   background-color: #fff;
   padding: 1em;
   margin-bottom: 1em;
 }
-.main-section .container-main .wrapper .info-extrato .info-row {
+.main-section .container-main .wrapper .info-emprestimo .info-row {
   display: flex;
   flex-direction: column;
 }
-.main-section .container-main .wrapper .info-extrato .info-row .label h1 {
+.main-section .container-main .wrapper .info-emprestimo .info-row .label h1 {
   font-weight: 400;
   margin-bottom: 1em;
 }
-.main-section .container-main .wrapper .info-extrato .info-saldo {
+.main-section .container-main .wrapper .info-emprestimo .info-available {
   padding-left: 1em;
 }
-.main-section .container-main .wrapper .info-extrato .info-saldo .available {
+.main-section .container-main .wrapper .info-emprestimo .info-available .available {
   margin-bottom: 1em;
 }
-.main-section .container-main .wrapper .info-extrato .info-saldo .available #saldo {
-  color: #3c8e3b;
+.main-section .container-main .wrapper .info-emprestimo .info-available .available #saldo {
+  color: #000;
+  font-weight: 600;
 }
-.main-section .container-main .wrapper .info-extrato .info-saldo .limit p:nth-of-type(2) {
+.main-section .container-main .wrapper .none {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-section .container-main .wrapper .none p {
+  margin: 2em 0em 1em 0em;
+  text-align: center;
+  color: #515151;
+}
+.main-section .container-main .wrapper .none #next {
+  background-color: #CC092F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  height: 39px;
+  width: 240px;
+}
+.main-section .container-main .wrapper .none #next:hover {
+  background-color: #660518;
+}
+.main-section .container-main .wrapper .square1 {
+  background-color: #fff;
+  padding: 1em;
+  margin-top: 1em;
+}
+.main-section .container-main .wrapper .square1 .valor-square1 hr {
+  margin-top: 1em;
+}
+.main-section .container-main .wrapper .square1 .valor-square1 input {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #515151;
+  margin-bottom: 2em;
+  padding: 5px 0em;
+  transition: 0.5s;
+}
+.main-section .container-main .wrapper .square1 .valor-square1 input:focus {
+  outline: none;
+  border-bottom: 2px solid #CC092F;
+}
+.main-section .container-main .wrapper .square1 .parcelas-square1 p {
+  margin-bottom: 1em;
+}
+.main-section .container-main .wrapper .square1 .parcelas-square1 #parcelas {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #515151;
+  margin-bottom: 2em;
+  padding: 5px 1em;
+  transition: 0.5s;
+}
+.main-section .container-main .wrapper .square1 .parcelas-square1 #parcelas:focus {
+  outline: none;
+  border-bottom: 2px solid #CC092F;
+}
+.main-section .container-main .wrapper .square1 .result-card {
+  position: relative;
+  padding: 1em;
+  border: 1px solid rgba(58, 58, 58, 0.2);
+  margin-bottom: 1em;
+}
+.main-section .container-main .wrapper .square1 .result-card img {
+  position: absolute;
+  width: 20px;
+  right: 0;
+  bottom: 0;
+  transform: translate(-1em, -1em);
+}
+.main-section .container-main .wrapper .square1 .result-card .info-result .taxa p:nth-of-type(1) {
+  margin-top: 1em;
+}
+.main-section .container-main .wrapper .square1 .result-card .info-result .taxa p:nth-of-type(2) {
+  font-size: 0.8em;
+  color: #515151;
+  margin-bottom: 1em;
+}
+.main-section .container-main .wrapper .square1 .result-card .info-result .type-debit {
+  font-size: 0.8em;
+}
+.main-section .container-main .wrapper .square1 #next {
+  background-color: #CC092F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  width: 100%;
+  height: 39px;
+}
+.main-section .container-main .wrapper .square1 #next:hover {
+  background-color: #660518;
+}
+.main-section .container-main .wrapper .square2 {
+  background-color: #fff;
+  padding: 1em;
+  margin-top: 1em;
+}
+.main-section .container-main .wrapper .square2 .day-square2 p {
+  margin-bottom: 1em;
+}
+.main-section .container-main .wrapper .square2 .day-square2 #dias {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #515151;
+  margin-bottom: 2em;
+  padding: 5px 1em;
+  transition: 0.5s;
+}
+.main-section .container-main .wrapper .square2 .day-square2 #dias:focus {
+  outline: none;
+  border-bottom: 2px solid #CC092F;
+}
+.main-section .container-main .wrapper .square2 .finish {
+  background-color: #CC092F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  width: 100%;
+  height: 39px;
+}
+.main-section .container-main .wrapper .square2 .finish:hover {
+  background-color: #660518;
+}
+.main-section .container-main .wrapper .confirm {
+  margin-top: 1em;
+  background-color: #fff;
+  padding: 1em;
+}
+.main-section .container-main .wrapper .confirm p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.main-section .container-main .wrapper .confirm p i {
   color: #3c8e3b;
+  margin-right: 0.5em;
+  font-size: 1.5em;
+}
+.main-section .container-main .wrapper .confirm button {
+  background-color: #CC092F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  width: 100%;
+  height: 39px;
+}
+.main-section .container-main .wrapper .confirm button:hover {
+  background-color: #660518;
 }
 
 @media only screen and (min-width: 768px) {
@@ -65,23 +228,23 @@ hr {
   .main-section .container-main .wrapper .back {
     font-weight: 600;
   }
-  .main-section .container-main .wrapper .info-extrato {
+  .main-section .container-main .wrapper .info-emprestimo {
     padding: 2em;
   }
-  .main-section .container-main .wrapper .info-extrato .info-row {
+  .main-section .container-main .wrapper .info-emprestimo .info-row {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-  .main-section .container-main .wrapper .info-extrato .info-row button {
+  .main-section .container-main .wrapper .info-emprestimo .info-row button {
     width: 210px;
     padding: 10px 0px;
   }
-  .main-section .container-main .wrapper .info-extrato .info-saldo {
+  .main-section .container-main .wrapper .info-emprestimo .info-available {
     margin-left: 1.5em;
     display: flex;
   }
-  .main-section .container-main .wrapper .info-extrato .info-saldo .available {
+  .main-section .container-main .wrapper .info-emprestimo .info-available .available {
     margin-bottom: 0em;
     margin-right: 7em;
   }
@@ -96,7 +259,7 @@ hr {
     width: 100%;
     max-width: 1130px;
   }
-  .main-section .container-main .wrapper .info-extrato {
+  .main-section .container-main .wrapper .info-emprestimo {
     padding: 2em 3em;
   }
 }/*# sourceMappingURL=emprestimo.css.map */

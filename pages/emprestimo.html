@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/re_usable/menu.css">
-    <title>User Page</title>
+    <link rel="stylesheet" href="../css/emprestimo/emprestimo.css">
+    <title>Empréstimo</title>
 </head>
 <body>
     <header>
@@ -48,7 +49,78 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section class="main-section">
+            <div class="container-main">
+                <div class="wrapper">
 
+                    <a class="back" href="#"><i class='bx bx-chevron-left'></i>Voltar</a>
+
+                    <div class="info-emprestimo">
+                        <div class="info-row">
+                            <div class="label">
+                                <h1>Empréstimo</h1>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="info-available">
+                            <div class="available">
+                                <p>O valor disponivel no momento é de</p>
+                                <p id="saldo">R$ 10.500,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="none">
+                        <p>Não há nenhum empréstimo ativo no momento.</p>
+                        <button id="next">Novo empréstimo</button>
+                    </div>
+
+                    <div class="square1">
+                        <div class="valor-square1">
+                            <p>Insira o valor desejado</p>
+                            <hr>
+                            <input type="text" placeholder="Ex: R$ 10.500,00" required>
+                        </div>  
+                        <div class="parcelas-square1">
+                            <p>Quantidade de parcelas</p>
+                            <hr>
+                            <select name="parcelas" id="parcelas"></select>
+                        </div>  
+                        <div class="result-card">
+                            <img src="../assets/bradesco-simple-red.png">
+                            <div class="info-result">
+                                <p>Dinheiro liberado em até 72h</p>
+                                <div class="taxa">
+                                    <p><span id='parcelas-selected'>00</span>x &ensp; R$<span id="per-month"></span></p>
+                                    <p>Taxa 3 a.m</p>
+                                </div>
+                                <p class="type-debit">Débito em conta corrente</p>
+                            </div>
+                        </div>
+
+                        <button id="next">Prosseguir</button>
+                    </div>
+
+                    <div class="square2">
+                        <div class="day-square2">
+                            <p>Escolha o dia do pagamento</p>
+                            <hr>
+                            <select name="dias" id="dias"></select>
+                        </div>
+                        <button class="finish">Realizar empréstimo</button>
+                    </div>
+
+                    <div class="confirm">
+                        <p><i class='bx bxs-check-circle'></i>Empréstimo realizado com sucesso!</p>
+                        <hr>
+                        <button>Sair</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/emprestimo.js"></script>
     <script src="../js/menu.js"></script>
 </body>
 </html>
