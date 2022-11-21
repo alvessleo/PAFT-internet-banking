@@ -24,9 +24,13 @@ hr {
   font-size: 1em;
   cursor: pointer;
   margin-bottom: 1em;
+  transition: 0.5s;
 }
 .main-section .container-main .wrapper .back .bx {
   font-size: 1.5em;
+}
+.main-section .container-main .wrapper .back:hover {
+  color: #660518;
 }
 .main-section .container-main .wrapper .info-account {
   background-color: #fff;
@@ -51,7 +55,11 @@ hr {
   text-transform: uppercase;
   padding: 5px;
   cursor: pointer;
+  transition: background-color 0.5s;
   margin-bottom: 1em;
+}
+.main-section .container-main .wrapper .info-account .info-row button:hover {
+  background-color: #660518;
 }
 .main-section .container-main .wrapper .info-account .info-saldo {
   padding-left: 1em;
@@ -113,6 +121,10 @@ hr {
   text-transform: uppercase;
   padding: 5px;
   cursor: pointer;
+  transition: background-color 0.5s;
+}
+.main-section .container-main .wrapper .my-cards .btn-cards button:hover {
+  background-color: #660518;
 }
 .main-section .container-main .wrapper .my-cards .btn-cards button:nth-of-type(2) {
   background-color: #fff;
@@ -120,6 +132,10 @@ hr {
   color: #CC092F;
   font-weight: 400;
   margin-top: 1em;
+}
+.main-section .container-main .wrapper .my-cards .btn-cards button:nth-of-type(2):hover {
+  background-color: #CC092F;
+  color: #fff;
 }
 .main-section .container-main .wrapper .messages {
   background-color: #fff;
@@ -132,6 +148,9 @@ hr {
 @media only screen and (min-width: 768px) {
   .main-section .container-main .wrapper {
     margin: 1em 2em;
+  }
+  .main-section .container-main .wrapper .back {
+    font-weight: 600;
   }
   .main-section .container-main .wrapper .info-account {
     padding: 2em;
@@ -187,5 +206,32 @@ hr {
   }
   .main-section .container-main .wrapper .my-cards .btn-cards button:nth-of-type(2) {
     margin-top: 0em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .main-section .container-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .main-section .container-main .wrapper {
+    width: 100%;
+    max-width: 1130px;
+  }
+  .main-section .container-main .wrapper .info-account {
+    padding: 2em 3em;
+  }
+  .main-section .container-main .wrapper .actions {
+    grid-template-areas: "emp bol pix" "emp bol pix";
+  }
+  .main-section .container-main .wrapper .actions .item {
+    padding: 1em 3em;
+  }
+  .main-section .container-main .wrapper .my-cards {
+    padding: 2em 3em;
+    margin-top: 0em;
+  }
+  .main-section .container-main .wrapper .messages {
+    padding: 2em 3em;
   }
 }/*# sourceMappingURL=user_page.css.map */
