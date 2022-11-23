@@ -99,6 +99,9 @@ body {
   .cadastro .container .wrapper {
     padding: 2em;
   }
+  .cadastro .container .wrapper .back {
+    font-weight: 600;
+  }
   .cadastro .container .wrapper .typo h1 {
     max-width: 500px;
   }

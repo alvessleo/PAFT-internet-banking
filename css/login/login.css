@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter";
+}
+
+body {
+  background-color: #fff;
+}
+
+.login {
+  border-bottom: 2em solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .background {
+  display: none;
+}
+.login .container {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .container .wrapper {
+  padding: 1em;
+}
+.login .container .wrapper .back {
+  display: flex;
+  align-items: center;
+  color: #515151;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 1em;
+  transition: 0.5s;
+}
+.login .container .wrapper .back .bx {
+  font-size: 1.5em;
+}
+.login .container .wrapper .back:hover {
+  color: #660518;
+}
+.login .container .wrapper img {
+  width: 180px;
+  margin: 2.5em 0em;
+}
+.login .container .wrapper .typo h1 {
+  margin-bottom: 0.5em;
+  font-size: 1.7em;
+}
+.login .container .wrapper .typo p {
+  margin-bottom: 2em;
+  font-size: 1.1em;
+}
+.login .container .wrapper .account-type .buttons {
+  display: flex;
+}
+.login .container .wrapper .account-type .buttons .fisica {
+  text-transform: capitalize;
+  border: none;
+  border-radius: 0px;
+  color: #515151;
+  background-color: transparent;
+  border-bottom: 1.5px solid #515151;
+}
+.login .container .wrapper .account-type .buttons .juridica {
+  text-transform: capitalize;
+  border: none;
+  border-radius: 0px;
+  color: #515151;
+  background-color: transparent;
+  border-bottom: 1.5px solid #515151;
+}
+.login .container .wrapper .account-type .buttons .active {
+  font-weight: 600;
+  color: #CC092F;
+  border-bottom: 3.5px solid #CC092F;
+}
+.login .container .wrapper .account-type .input-fisica {
+  margin-top: 1.5em;
+}
+.login .container .wrapper .account-type .input-fisica input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #515151;
+  margin-bottom: 2em;
+  padding: 5px 0em;
+  transition: 0.5s;
+  font-size: 0.9em;
+}
+.login .container .wrapper .account-type .input-fisica input:focus {
+  outline: none;
+  border-bottom: 2px solid #CC092F;
+}
+.login .container .wrapper .account-type .input-juridica {
+  margin-top: 1.5em;
+  display: none;
+}
+.login .container .wrapper .account-type .input-juridica input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #515151;
+  margin-bottom: 2em;
+  padding: 5px 0em;
+  transition: 0.5s;
+  font-size: 0.9em;
+}
+.login .container .wrapper .account-type .input-juridica input:focus {
+  outline: none;
+  border-bottom: 2px solid #CC092F;
+}
+.login .container .wrapper .remember-forget {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.login .container .wrapper .remember-forget .remember {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.login .container .wrapper .remember-forget .remember input {
+  margin-right: 1em;
+}
+.login .container .wrapper .remember-forget .remember p {
+  font-size: 0.9em;
+}
+.login .container .wrapper .remember-forget .forget a {
+  color: #CC092F;
+}
+.login .container .wrapper button {
+  margin-top: 1em;
+  background-color: #CC092F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  height: 39px;
+  width: 100%;
+}
+.login .container .wrapper button:hover {
+  background-color: #660518;
+}
+
+@media only screen and (min-width: 768px) {
+  .login .container {
+    border-bottom: 1.2em solid #fff;
+  }
+  .login .container .wrapper {
+    padding: 2em;
+    max-width: 450px;
+  }
+  .login .container .wrapper .back {
+    font-weight: 600;
+  }
+  .login .container .wrapper .typo h1 {
+    max-width: 500px;
+  }
+  .login .container .wrapper .typo p {
+    max-width: 450px;
+  }
+  .login .container .wrapper .input-list {
+    display: flex;
+  }
+  .login .container .wrapper .input-list .one input {
+    width: 90%;
+  }
+  .login .container .wrapper .input-list .two input {
+    width: 90%;
+  }
+  .login .container .wrapper .politics p {
+    max-width: 500px;
+  }
+  .login .container .wrapper button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 350px;
+    margin-top: 2em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .login {
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: none;
+  }
+  .login .background {
+    display: flex;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 50%;
+  }
+  .login .container {
+    width: 55%;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1.2em solid #fff;
+  }
+  .login .container .wrapper {
+    padding: 2em;
+  }
+  .login .container .wrapper .remember-forget {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .cadastro {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+  }
+  .cadastro .background {
+    width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-right: 100% solid #CC092F;
+  }
+  .cadastro .container {
+    border-bottom: 1.2em solid #fff;
+    width: 50%;
+  }
+  .cadastro .container .wrapper {
+    padding: 2em 4em;
+    max-width: 650px;
+  }
+  .cadastro .container .wrapper .typo h1 {
+    max-width: 500px;
+  }
+  .cadastro .container .wrapper .typo p {
+    max-width: 450px;
+  }
+  .cadastro .container .wrapper .input-list {
+    display: flex;
+  }
+  .cadastro .container .wrapper .input-list .one input {
+    width: 90%;
+  }
+  .cadastro .container .wrapper .input-list .two input {
+    width: 90%;
+  }
+  .cadastro .container .wrapper .politics p {
+    max-width: 500px;
+  }
+  .cadastro .container .wrapper button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 350px;
+    margin-top: 2em;
+  }
+}/*# sourceMappingURL=login.css.map */

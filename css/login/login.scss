@@ -40,11 +40,14 @@ $background-color: #ececec;
 }
 
 body{
-    background-color: $background-color;
+    background-color: $color-white;
 }
 
-.cadastro{
-
+.login{
+    border-bottom: 2em solid $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .background{
         display: none;
     }
@@ -92,38 +95,95 @@ body{
                 }
             }
 
-            .input-list{
-                input{
-                    width: 100%;
-                    border: none;
-                    border-bottom: 2px solid $color-dark-grey;
-                    margin-bottom: 2em;
-                    padding: 5px 0em;
-                    transition: 0.5s;
-                    font-size: 0.9em;
-
-                    &:focus{
-                        outline: none;
-                        border-bottom: 2px solid $color-primary;
+            .account-type{
+                .buttons{
+                    display: flex;
+                    .fisica{
+                        text-transform: capitalize;
+                        border: none;
+                        border-radius: 0px;
+                        color: $color-dark-grey;
+                        background-color: transparent;
+                        border-bottom: 1.5px solid $color-dark-grey;
                     }
-                }
-            }
 
-            .politics{
-                display: flex;
-                align-items: center;
-                margin-top: 1em;
-                margin-bottom: 1em;
-                input{
-                    margin-right: 1em;
-                }
-                p{
-                    span{
+                    .juridica{
+                        text-transform: capitalize;
+                        border: none;
+                        border-radius: 0px;
+                        color: $color-dark-grey;
+                        background-color: transparent;
+                        border-bottom: 1.5px solid $color-dark-grey;
+                    }
+
+                    .active{
+                        font-weight: 600;
                         color: $color-primary;
-                        cursor: pointer;
+                        border-bottom: 3.5px solid $color-primary;
+                    }
+                }
+
+                .input-fisica{
+                    margin-top: 1.5em;
+                    input{
+                        width: 100%;
+                        border: none;
+                        border-bottom: 2px solid $color-dark-grey;
+                        margin-bottom: 2em;
+                        padding: 5px 0em;
+                        transition: 0.5s;
+                        font-size: 0.9em;
+    
+                        &:focus{
+                            outline: none;
+                            border-bottom: 2px solid $color-primary;
+                        }
+                    }
+                }
+
+                .input-juridica{
+                    margin-top: 1.5em;
+                    display: none;
+                    input{
+                        width: 100%;
+                        border: none;
+                        border-bottom: 2px solid $color-dark-grey;
+                        margin-bottom: 2em;
+                        padding: 5px 0em;
+                        transition: 0.5s;
+                        font-size: 0.9em;
+    
+                        &:focus{
+                            outline: none;
+                            border-bottom: 2px solid $color-primary;
+                        }
                     }
                 }
             }
+
+            .remember-forget{
+                display: flex;
+                flex-direction: column-reverse;
+                .remember{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    input{
+                        margin-right: 1em;
+                    }
+                    p{
+                        font-size: 0.9em;
+                    }
+                }
+
+                .forget{
+                    a{
+                        color: $color-primary;
+                    }
+                }
+            }
+
 
             button{
                 margin-top: 1em;
@@ -136,11 +196,12 @@ body{
 // RESPONSIVIDADE
 
 @media only screen and (min-width: 768px){
-    .cadastro{
+    .login{
         .container{
             border-bottom: 1.2em solid $color-white;
             .wrapper{
                 padding: 2em;
+                max-width: 450px;
 
                 .back{
                     font-weight: 600;
@@ -188,22 +249,31 @@ body{
 }
 
 @media only screen and (min-width: 1024px){
-    .cadastro{
+    .login{
         display: flex;
+        flex-direction: row-reverse;
+        border-bottom: none;
         .background{
             display: flex;
             height: 100vh;
-            
+            object-fit: cover;
+            width: 50%;
         }
 
         .container{
+            width: 55%;
+            padding: 2em;
             display: flex;
             justify-content: center;
             align-items: center;
             border-bottom: 1.2em solid $color-white;
             .wrapper{
                 padding: 2em;
-
+                .remember-forget{
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }
             }
         }
     }
