@@ -1,0 +1,182 @@
+// ROOT
+
+$color-primary: #CC092F;
+$hover-white-color: #e8b2b2;
+$hover-red-color: #660518;
+$color-white: #fff;
+$color-black: #000;
+$color-dark-grey: #515151;
+$color-light-grey: #f2f2f2;
+$color-green: #3c8e3b;
+$background-color: #ececec;
+
+
+// REUSABLE
+
+@mixin button-red {
+    background-color: $color-primary;
+    color: $color-white;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color .5s;
+    height: 39px;
+    width: 100%;
+
+    &:hover{
+        background-color: $hover-red-color;
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter';
+}
+
+body{
+    background-color: $background-color;
+}
+
+.cadastro{
+
+    .background{
+        display: none;
+    }
+
+    .container{
+        background-color: $color-white;
+    
+
+        .wrapper{
+            padding: 1em;
+
+            .back{
+                display: flex;
+                align-items: center;
+                color: $color-dark-grey;
+                font-size: 1em;
+                cursor: pointer;
+                margin-bottom: 1em;
+                transition: .5s;
+
+                .bx{
+                    font-size: 1.5em;
+                }
+
+                &:hover{
+                    color: $hover-red-color;
+                }
+            }
+
+            img{
+                width: 180px;
+                margin: 2.5em 0em;
+            }
+
+            .typo{
+                h1{
+                    margin-bottom: 0.5em;
+                    font-size: 1.7em;
+                }
+                p{
+                    margin-bottom: 2em;
+                    font-size: 1.1em;
+                }
+            }
+
+            .input-list{
+                input{
+                    width: 100%;
+                    border: none;
+                    border-bottom: 2px solid $color-dark-grey;
+                    margin-bottom: 2em;
+                    padding: 5px 0em;
+                    transition: 0.5s;
+                    font-size: 0.9em;
+
+                    &:focus{
+                        outline: none;
+                        border-bottom: 2px solid $color-primary;
+                    }
+                }
+            }
+
+            .politics{
+                display: flex;
+                align-items: center;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                input{
+                    margin-right: 1em;
+                }
+                p{
+                    span{
+                        color: $color-primary;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            button{
+                margin-top: 1em;
+                @include button-red();
+            }
+        }
+    }
+}
+
+// RESPONSIVIDADE
+
+@media only screen and (min-width: 768px){
+    .cadastro{
+        .container{
+            border-bottom: 1.2em solid $color-white;
+            .wrapper{
+                padding: 2em;
+                .typo{
+                    h1{
+                        max-width: 500px;
+                    }
+                    p{
+                        max-width: 450px;
+                    }
+                }
+
+                .input-list{
+                    display: flex;
+                    .one{
+                        input{
+                            width: 90%;
+                        }
+                    }
+                    .two{
+                        input{
+                            width: 90%;
+                        }
+                    }
+                }
+
+                .politics{
+                    p{
+                        max-width: 500px;
+                    }
+                }
+
+                button{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    width: 240px;
+                    margin-top: 2em;
+                }
+            }
+        }
+    }
+}

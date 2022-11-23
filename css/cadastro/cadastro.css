@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter";
+}
+
+body {
+  background-color: #ececec;
+}
+
+.cadastro .background {
+  display: none;
+}
+.cadastro .container {
+  background-color: #fff;
+}
+.cadastro .container .wrapper {
+  padding: 1em;
+}
+.cadastro .container .wrapper .back {
+  display: flex;
+  align-items: center;
+  color: #515151;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 1em;
+  transition: 0.5s;
+}
+.cadastro .container .wrapper .back .bx {
+  font-size: 1.5em;
+}
+.cadastro .container .wrapper .back:hover {
+  color: #660518;
+}
+.cadastro .container .wrapper img {
+  width: 180px;
+  margin: 2.5em 0em;
+}
+.cadastro .container .wrapper .typo h1 {
+  margin-bottom: 0.5em;
+  font-size: 1.7em;
+}
+.cadastro .container .wrapper .typo p {
+  margin-bottom: 2em;
+  font-size: 1.1em;
+}
+.cadastro .container .wrapper .input-list input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #515151;
+  margin-bottom: 2em;
+  padding: 5px 0em;
+  transition: 0.5s;
+  font-size: 0.9em;
+}
+.cadastro .container .wrapper .input-list input:focus {
+  outline: none;
+  border-bottom: 2px solid #CC092F;
+}
+.cadastro .container .wrapper .politics {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.cadastro .container .wrapper .politics input {
+  margin-right: 1em;
+}
+.cadastro .container .wrapper .politics p span {
+  color: #CC092F;
+  cursor: pointer;
+}
+.cadastro .container .wrapper button {
+  margin-top: 1em;
+  background-color: #CC092F;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  height: 39px;
+  width: 100%;
+}
+.cadastro .container .wrapper button:hover {
+  background-color: #660518;
+}
+
+@media only screen and (min-width: 768px) {
+  .cadastro .container {
+    border-bottom: 1.2em solid #fff;
+  }
+  .cadastro .container .wrapper {
+    padding: 2em;
+  }
+  .cadastro .container .wrapper .typo h1 {
+    max-width: 500px;
+  }
+  .cadastro .container .wrapper .typo p {
+    max-width: 450px;
+  }
+  .cadastro .container .wrapper .input-list {
+    display: flex;
+  }
+  .cadastro .container .wrapper .input-list .one input {
+    width: 90%;
+  }
+  .cadastro .container .wrapper .input-list .two input {
+    width: 90%;
+  }
+  .cadastro .container .wrapper .politics p {
+    max-width: 500px;
+  }
+  .cadastro .container .wrapper button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 240px;
+    margin-top: 2em;
+  }
+}/*# sourceMappingURL=cadastro.css.map */
