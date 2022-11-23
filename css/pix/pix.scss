@@ -129,6 +129,99 @@ hr{
                     width: 100%;
                 }
             }
+
+            .enviar-pag{
+                background-color: $color-white;
+                padding: 1em;
+                margin-top: 1em;
+                display: flex;
+                flex-direction: column;
+
+                hr{
+                    margin: 1em 0;
+                    z-index: 9;
+                }
+
+                .item{
+                    font-size: 0.9em;
+                    margin-bottom: 1em;
+                    p{
+                        &:nth-of-type(1){
+                            font-weight: 500;
+                        }
+                        &:nth-of-type(2){
+                            font-weight: 300;
+                            color: $color-dark-grey;
+                        }
+                    }
+                }
+                input{
+                    width: 100%;
+                    border: none;
+                    border-bottom: 2px solid $color-dark-grey;
+                    margin-bottom: 2em;
+                    padding: 5px 0em;
+                    transition: 0.5s;
+
+                    &:focus{
+                        outline: none;
+                        border-bottom: 2px solid $color-primary;
+                    }
+                }
+                .last-part{
+                    .option-form{
+                        p{
+                            font-size: 0.9em;
+                            span{
+                                color: $color-green;
+                            }
+                            &:nth-of-type(1){
+                                font-weight: 500;
+                            }
+                            &:nth-of-type(2){
+                                font-weight: 300;
+                                color: $color-dark-grey;
+                            }
+                        }
+                    }
+                    button{
+                        @include button-red();
+                        height: 39px;
+                        width: 100%;
+                        margin: 0 auto;
+                        margin-top: 1em;
+                    }
+
+                }
+                
+            }
+
+            .confirm{
+                background-color: $color-white;
+                padding: 1em;
+                margin-top: 1em;
+
+                p{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 1em;
+                    i{
+                        color: $color-green;
+                        margin-right: .5em;
+                        font-size: 1.5em
+                    }
+                }
+
+                button{
+                    @include button-red();
+                    width: 100%;
+                    height: 39px;
+                    
+                    &:nth-of-type(2){
+                        margin-top: 1em;
+                    }
+                }
+            }
         }
     }
 }
@@ -146,22 +239,58 @@ hr{
                 }
                 .info-pix{
                     padding: 2em;
-                    .info-row{
-                        flex-direction: row;
-                        align-items: center;
-                        justify-content: space-between;
+                    .info-options{
                         button{
-                            width: 210px;
-                            padding: 10px 0px;
+                            width: 240px;
+                            
                         }
                     }
-                    .info-saldo{
-                        margin-left: 1.5em;
+                    
+                }
+
+                .input-chave{
+                    padding: 2em;
+                    input{
+                        width: 45%;
+                    }
+                    button{
+                        width: 240px;
+                        
+                    }
+                }
+
+                .enviar-pag{
+                    padding: 2em;
+                    
+                    input{
+                        width: 45%;
+
+                    }
+
+                    .last-part{
                         display: flex;
-                        .available{
-                            margin-bottom: 0em;
-                            margin-right: 7em;
+                        align-items: center;
+                        .option-form{
+                            width: 100%;
                         }
+                        button{
+                            max-width: 240px;
+                            min-width: 240px;
+                            margin-top: 0em;
+                        }
+                    }
+                }
+
+                .confirm{
+                    display: flex;
+                    flex-direction: column;
+
+                    hr{
+                        z-index: 9;
+                    }
+                    button{
+                        max-width: 240px;
+                        margin: 0 auto;
                     }
                 }
             }
@@ -180,6 +309,19 @@ hr{
                 max-width: 1130px;
 
                 .info-pix{
+                    padding: 2em 3em;
+                }
+
+                .input-chave{
+                    padding: 2em 3em;
+                }
+
+                .enviar-pag{
+                    padding: 2em 3em;
+                    
+                }
+
+                .confirm{
                     padding: 2em 3em;
                 }
             }

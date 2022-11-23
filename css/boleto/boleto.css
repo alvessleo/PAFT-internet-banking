@@ -124,6 +124,7 @@ hr {
 .main-section .container-main .wrapper .dados-pag .item {
   margin-bottom: 1em;
   margin-left: 1em;
+  font-size: 0.9em;
 }
 .main-section .container-main .wrapper .dados-pag .item p:nth-of-type(1) {
   font-weight: 500;
