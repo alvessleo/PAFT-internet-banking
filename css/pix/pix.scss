@@ -69,7 +69,7 @@ hr{
             }
 
 
-            .info-extrato{
+            .info-pix{
                 background-color: $color-white;
                 padding: 1em;
                 margin-bottom: 1em;
@@ -81,29 +81,52 @@ hr{
                     .label{
                         h1{
                             font-weight: 400;
-                            margin-bottom: 1em
+                            margin-bottom: 1em;
+                            text-transform: uppercase;
                         }
                     }
                 }
 
-                .info-saldo{
-                    padding-left: 1em;
+                .info-options{
                     
-                    .available{
-                        margin-bottom: 1em;
-                        #saldo{
-                            color: $color-green;
-                        }
+                    button{
+                        margin-top: 1em;
+                        width: 100%;
+                        height: 39px;
+                        @include button-red();
                     }
-                    .limit{
-                        p{
-                            &:nth-of-type(2){
-                                color: $color-green;
-                            }
-                        }
-                        
+                }
+            }
 
+            .input-chave{
+                display: flex;
+                flex-direction: column;
+                background-color: $color-white;
+                padding: 1em;
+
+                hr{
+                    margin-top: 1em;
+                    z-index: 9;
+                }
+
+                input{
+                    width: 100%;
+                    border: none;
+                    border-bottom: 2px solid $color-dark-grey;
+                    margin-bottom: 2em;
+                    padding: 5px 0em;
+                    transition: 0.5s;
+
+                    &:focus{
+                        outline: none;
+                        border-bottom: 2px solid $color-primary;
                     }
+                }
+
+                button{
+                    @include button-red();
+                    height: 39px;
+                    width: 100%;
                 }
             }
         }
@@ -121,7 +144,7 @@ hr{
                 .back{
                     font-weight: 600;
                 }
-                .info-extrato{
+                .info-pix{
                     padding: 2em;
                     .info-row{
                         flex-direction: row;
@@ -156,7 +179,7 @@ hr{
                 width: 100%;
                 max-width: 1130px;
 
-                .info-extrato{
+                .info-pix{
                     padding: 2em 3em;
                 }
             }

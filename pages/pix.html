@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/re_usable/menu.css">
-    <title>User Page</title>
+    <link rel="stylesheet" href="../css/pix/pix.css">
+    <title>Pix</title>
 </head>
 <body>
     <header>
@@ -48,7 +49,69 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section class="main-section">
+            <div class="container-main">
+                <div class="wrapper">
 
+                    <a class="back" href="#"><i class='bx bx-chevron-left'></i>Voltar</a>
+
+                    <div class="info-pix">
+                        <div class="info-row">
+                            <div class="label">
+                                <h1>Pix</h1>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="info-options">
+                            <p>Para prosseguir, selecione uma das opções a baixo</p>
+                            <button>Realizar pagamento</button>
+                        </div>
+                    </div>
+
+                    <div class="input-chave">
+                        <p>Insira uma chave PIX</p>
+                        <hr>
+                        <input type="text" placeholder=" CPF/CNPJ, celular, e-mail ou aleatória" required>
+                        <button>Prosseguir</button>
+                    </div>
+
+                    <div class="enviar-pag">
+                        <p>Enviar pagamento</p>
+                        <hr>
+                        <div class="item">
+                            <p>Nome do Beneficiário</p>
+                            <p id="beneficiado">Mark Joselli</p>
+                        </div>
+                        <div class="item">
+                            <p>Agência</p>
+                            <p id="agencia">***.000.000-**</p>
+                        </div>
+                        <div class="item">
+                            <p>Banco</p>
+                            <p id="banco">Bradesco</p>
+                        </div>
+                        <hr>
+                        <input type="text" placeholder=" Descrição (opicional)">
+                        <div class="confirm">
+                            <div class="option-form">
+                                <p>Forma de pagamento</p>
+                                <p>Saldo: <span id="saldo">R$ 500,00</span></p>
+                            </div>
+                            <button>Pagar</button>
+                        </div>
+
+                    </div>
+
+                    <div class="confirm">
+                        <p><i class='bx bxs-check-circle'></i>PIX realizado com sucesso!</p>
+                        <hr>
+                        <button>Sair</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="../js/menu.js"></script>
 </body>
 </html>
