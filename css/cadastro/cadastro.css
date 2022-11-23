@@ -15,6 +15,9 @@ body {
 }
 .cadastro .container {
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cadastro .container .wrapper {
   padding: 1em;
@@ -119,7 +122,73 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 240px;
+    width: 350px;
+    margin-top: 2em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cadastro {
+    display: flex;
+  }
+  .cadastro .background {
+    display: flex;
+    height: 100vh;
+  }
+  .cadastro .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1.2em solid #fff;
+  }
+  .cadastro .container .wrapper {
+    padding: 2em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .cadastro {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+  }
+  .cadastro .background {
+    width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-right: 100% solid #CC092F;
+  }
+  .cadastro .container {
+    border-bottom: 1.2em solid #fff;
+    width: 50%;
+  }
+  .cadastro .container .wrapper {
+    padding: 2em 4em;
+    max-width: 650px;
+  }
+  .cadastro .container .wrapper .typo h1 {
+    max-width: 500px;
+  }
+  .cadastro .container .wrapper .typo p {
+    max-width: 450px;
+  }
+  .cadastro .container .wrapper .input-list {
+    display: flex;
+  }
+  .cadastro .container .wrapper .input-list .one input {
+    width: 90%;
+  }
+  .cadastro .container .wrapper .input-list .two input {
+    width: 90%;
+  }
+  .cadastro .container .wrapper .politics p {
+    max-width: 500px;
+  }
+  .cadastro .container .wrapper button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 350px;
     margin-top: 2em;
   }
 }/*# sourceMappingURL=cadastro.css.map */
