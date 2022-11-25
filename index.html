@@ -20,6 +20,8 @@
                 <li><a href="#">Para você</a></li>
                 <li><a href="#">Empresas</a></li>
                 <li><a href="#">Conteúdos</a></li>
+                <li><i class='bx bx-search'></i></li>
+                
             </ul>
             <ul class="nav-list">
                 <li class="first-li"><a href="#">Bradesco</a></li>
@@ -30,12 +32,6 @@
                 <li class="btn-exit"><button id="access">Acessar</button></li>
             </ul>
             <ul class="desktop">
-                <li>
-                    <div class="user-logged">
-                        <img class="user-photo" src="../assets/my-photo.jpg" alt="my photo">
-                        <p>Leonardo</p>
-                    </div>
-                </li>
                 <li class="btn-open"><button id=open>Abrir conta</button></li>
                 <li class="btn-exit"><button id="access">Acessar</button></li>
             </ul>
@@ -46,6 +42,150 @@
             </div>
         </nav>
     </header>
-    <script src="./js/menu.js"></script>
+    <section class="hero-section">
+
+        <div class="container-slide">
+            <div class="slider">
+
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <!-- <input type="radio" name="radio-btn" id="radio3"> -->
+    
+                    <div class="slide first">
+                        <img src="assets/hero-background.png" alt="imagem principal">
+                      </div>
+                    <div class="slide">
+                        <img src="assets/background-slider-2.png" alt="imagem sequencia">
+                    </div>
+
+                    <div class="auto-slide-button">
+                        <div class="auto-btn1">
+                            
+                        </div>
+                        <div class="auto-btn2">
+
+                        </div>
+                        <div class="auto-btn3">
+
+                        </div>
+                    </div>
+
+                    <div class="manual-slide-button">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+    <section class="features-section">
+        <h1>Tudo pensado para você</h1>
+        <p>Saiba mais sobre as soluções e os serviços que agilizam sua vida.</p>
+        <div class="features-container">
+            <div class="item emp">
+                <img src="../assets/emprestimo.png">
+                <p>Empréstimo</p>
+                <p>Realizar<i class='bx bx-right-arrow-alt' ></i></p>
+            </div>
+            <div class="item bol">
+                <img src="../assets/boleto-logo.png">
+                <p class="boleto-label">Boleto</p>
+                <p>Pagar<i class='bx bx-right-arrow-alt' ></i></p>
+            </div>
+            <div class="item pix">
+                <img class="pix" src="../assets/pix.png">
+                <p>Pix</p>
+                <p>Pagar<i class='bx bx-right-arrow-alt' ></i></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-card-section">
+        <div class="container">
+            <h1>Conheça nosso Cartão de Crédito</h1>
+            <p>Saiba mais sobre as soluções e os serviços que agilizam sua vida.</p>
+            <a href="#">Saiba mais <i class='bx bx-chevron-right'></i></a>
+        </div>
+        <img src="assets/credit-card-section.jpg">
+    </section>
+
+    <section class="get-card-section">
+        <div class="content">
+            <h1>Garanta seu cartão Bradesco</h1>
+            <p>Em pouco tempo tenha seu cartão em maos e já com o débito liberado.</p>
+            <a href="#">Garantir já <i class='bx bx-chevron-right'></i></a>
+        </div>
+        <img src="assets/credit-card.png">
+    </section>
+
+    <section class="download-app-section">
+        <img src="assets/bradesco-app.png">
+        <div class="content">
+            <h1>Baixe nosso app</h1>
+            <p>Possua acesso a sua conta 24h por dia, seguindo os seguintes passos</p>
+            <div class="steps">
+                <div class="step">
+                    <p>1</p>
+                    <p>Baixe o <span>Bradesco app</span> na sua loja, Apple Store ou Google Play</p>
+                </div>
+                <div class="step">
+                    <p>2</p>
+                    <p>Clique em abrir sua conta, e siga os passos do aplicativo</p>
+                </div>
+                <div class="step">
+                    <p>3</p>
+                    <p>Aguarde a confirmação a após isso aproveite nosso app</p>
+                </div>
+            </div>
+            <div class="download-sources">
+                <img src="assets/app-store.png">
+                <img src="assets/google-play.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="best-bank">
+        <img src="/assets/second-background.png">
+        <h1>Venha fazer parte do maior banco do Brasil.</h1>
+    </section>
+
+    <footer>
+        <div class="list">
+            <p class="header">Bradesco</p>
+            <p><a href="#">Sobre nós</a></p>
+            <p><a href="#">Perguntas Frequentes</a></p>
+            <p><a href="#">Contato</a></p>
+        </div>
+        <div class="list">
+            <p class="header">Produtos</p>
+            <p><a href="#">Conta Digital</a></p>
+            <p><a href="#">Cartão de crédito</a></p>
+            <p><a href="#">Empréstimo</a></p>
+            <p><a href="#">Pagamentos</a></p>
+        </div>
+        <div class="list">
+            <p class="header">Nossas políticas</p>
+            <p><a href="#">Política de privacidade</a></p>
+            <p><a href="#">Política de segurança</a></p>
+            <p><a href="#">Contratos</a></p>
+        </div>
+        <div class="list">
+            <p class="header">Fale conosco</p>
+            <p><a href="#">0800 000 0000</a></p>
+            <p><a href="#">help@bradesco.com</a></p>
+            <p><a href="#">Atendimento 24h</a></p>
+        </div>
+        <div class="list">
+            <p class="header">Baixe o app</p>
+            <p><a href="#"><img src="assets/app-store.png"></a></p>
+            <p><a href="#"><img src="assets/google-play.png"></a></p>
+        </div>
+    </footer>
+    <script src="/js/index.js"></script>
+    <script src="/js/menu.js"></script>
 </body>
 </html>

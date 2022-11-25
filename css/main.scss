@@ -215,6 +215,13 @@ header{
                 align-items: center;
                 li{
                     min-width: 80px;
+
+                    i{
+                        font-size: 1.1em;
+                        transform: translateY(2px);
+                        margin-left: 1.5em;
+                    }
+
                 }
             }
 
@@ -222,6 +229,10 @@ header{
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                #open{
+                    width: 135px;
+                    transform: translateX(30px);
+                }
             }
 
             ul{
@@ -244,8 +255,7 @@ header{
         padding: 25px;
         nav{
             .logo{
-                width: 175px;
-                height: 39px;
+                width: 40px;
             }
 
             ul{
