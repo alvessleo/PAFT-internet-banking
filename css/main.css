@@ -150,7 +150,21 @@ header nav .menu span {
 }
 
 .hero-section .container-slide {
+  position: relative;
   width: 100%;
+}
+.hero-section .container-slide .typo {
+  color: #fff;
+  position: absolute;
+  top: calc(85% - 250px);
+  z-index: 11;
+  padding: 1em;
+}
+.hero-section .container-slide .typo h1 {
+  font-size: 2.2em;
+}
+.hero-section .container-slide .typo p {
+  font-size: 1.1em;
 }
 .hero-section .container-slide .slider {
   width: 100%;
@@ -165,6 +179,7 @@ header nav .menu span {
 .hero-section .container-slide .slider .slides .slide {
   width: 25%;
   position: relative;
+  transition: 2s;
 }
 .hero-section .container-slide .slider .slides .slide img {
   -o-object-fit: cover;
@@ -181,6 +196,8 @@ header nav .menu span {
   display: flex;
   justify-content: center;
   z-index: 10;
+  bottom: 0;
+  transform: translateY(-20px);
 }
 .hero-section .container-slide .slider .slides .manual-slide-button .manual-btn {
   border: 2px solid #fff;
@@ -189,12 +206,6 @@ header nav .menu span {
   cursor: pointer;
   transition: 1s;
   margin-inline: 0.3em;
-}
-.hero-section .container-slide .slider .slides .manual-slide-button .manual-btn:last-child() {
-  margin-right: 40px;
-}
-.hero-section .container-slide .slider .slides .manual-slide-button .manual-btn:hover {
-  background-color: #fff;
 }
 .hero-section .container-slide .slider .slides #radio1:checked ~ .first {
   margin-left: 0;
@@ -210,9 +221,11 @@ header nav .menu span {
   width: 100vw;
   display: flex;
   justify-content: center;
+  bottom: 0;
+  transform: translateY(-20px);
 }
 .hero-section .container-slide .slider .slides .auto-slide-button div {
-  border: 2px solid #CC092F;
+  border: 2px solid #fff;
   padding: 5px;
   border-radius: 50%;
   cursor: pointer;
@@ -229,6 +242,239 @@ header nav .menu span {
   background-color: #fff;
 }
 
+.features-section {
+  margin: 3em 1em 1em 1em;
+}
+.features-section h1 {
+  font-size: 2.2em;
+  color: #CC092F;
+  margin-bottom: 1em;
+}
+.features-section p {
+  font-size: 1.1em;
+}
+.features-section .features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.features-section .features-container .item {
+  background-color: #fff;
+  padding: 1em;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 5px solid #CC092F;
+  margin: 1em;
+  width: 200px;
+  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.1));
+  border-radius: 10px 10px 0 0;
+}
+.features-section .features-container .item img {
+  width: 60px;
+  margin-bottom: 2em;
+}
+.features-section .features-container .item .pix {
+  width: 50px;
+}
+.features-section .features-container .item p {
+  font-size: 1.1em;
+}
+.features-section .features-container .item p:nth-of-type(1) {
+  font-weight: 600;
+}
+.features-section .features-container .item p:nth-of-type(2) {
+  color: #CC092F;
+  display: flex;
+  align-items: center;
+}
+
+.about-card-section {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.about-card-section .about-card-img {
+  display: none;
+}
+.about-card-section .container {
+  margin: 1em;
+}
+.about-card-section .container h1 {
+  color: #CC092F;
+  font-size: 2.2em;
+  margin-bottom: 1em;
+}
+.about-card-section .container p {
+  margin-bottom: 1em;
+  font-size: 1.1em;
+}
+.about-card-section .container a {
+  color: #CC092F;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.5s;
+}
+.about-card-section .container a i {
+  font-size: 1.3em;
+  transform: translateY(2px);
+}
+.about-card-section .container a:hover {
+  color: #660518;
+}
+
+.get-card-section {
+  background: linear-gradient(98.26deg, #CC092F -0.03%, #830E25 45.86%, #4B121D 98.96%);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.get-card-section .credit-card-img {
+  display: none;
+}
+.get-card-section .content {
+  margin: 1em;
+}
+.get-card-section .content h1 {
+  color: #fff;
+  font-size: 2.2em;
+  margin-bottom: 1em;
+}
+.get-card-section .content p {
+  color: #fff;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+}
+.get-card-section .content a {
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.5s;
+}
+.get-card-section .content a i {
+  font-size: 1.3em;
+  transform: translateY(2px);
+}
+.get-card-section .content a:hover {
+  color: #e8b2b2;
+}
+
+.download-app-section {
+  padding: 2em 0em;
+}
+.download-app-section .main-app {
+  width: 500px;
+  transform: translateX(calc(50% - 350px));
+}
+.download-app-section .content {
+  margin: 1em;
+}
+.download-app-section .content h1 {
+  color: #CC092F;
+  font-size: 2.2em;
+  margin-bottom: 1em;
+}
+.download-app-section .content p {
+  margin-bottom: 1em;
+  font-size: 1.1em;
+}
+.download-app-section .content .steps .step {
+  display: flex;
+}
+.download-app-section .content .steps .step p:nth-of-type(1) {
+  background-color: #CC092F;
+  color: #fff;
+  border-radius: 50%;
+  min-width: 30px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+}
+.download-app-section .content .steps .step p span {
+  color: #CC092F;
+  cursor: pointer;
+}
+.download-app-section .content .download-sources {
+  display: flex;
+  margin-top: 1em;
+}
+.download-app-section .content .download-sources img {
+  width: 130px;
+}
+.download-app-section .content .download-sources img:nth-of-type(1) {
+  margin-right: 1em;
+}
+
+.best-bank {
+  position: relative;
+  height: 400px;
+}
+.best-bank img {
+  width: 100vw;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.best-bank h1 {
+  margin: 1em;
+  font-size: 2.5em;
+  color: #fff;
+  position: absolute;
+  top: calc(50% - 170px);
+  z-index: 13;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.best-bank h1 span {
+  color: #CC092F;
+}
+
+footer {
+  background-color: #111111;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4em 1em 1em 1em;
+}
+footer .list {
+  width: 180px;
+  text-align: left;
+  margin-bottom: 1em;
+}
+footer .list .header {
+  font-weight: 500;
+}
+footer .list p a {
+  color: #f2f2f2;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 200;
+}
+footer .list p a img {
+  width: 140px;
+}
+footer .list p a img:nth-of-type(1) {
+  margin-top: 1em;
+  margin-bottom: -0.4em;
+}
+
+@media only screen and (min-width: 425px) {
+  .download-app-section .main-app {
+    transform: translateX(calc(50% - 290px));
+  }
+}
 @media only screen and (min-width: 768px) {
   header nav {
     display: flex;
@@ -258,10 +504,10 @@ header nav .menu span {
     display: flex;
     flex-direction: row;
     align-items: center;
+    transform: translateX(-50px);
   }
   header nav .desktop #open {
     width: 135px;
-    transform: translateX(30px);
   }
   header nav ul {
     display: flex;
