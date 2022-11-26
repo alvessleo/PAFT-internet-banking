@@ -14,7 +14,17 @@ confirm_bol.style.display = "none";
 const cod_boleto = document.getElementById("codigo_barras");
 
 cod_boleto.onclick = () => {
+    step1.style.display = "flex";
+}
+
+// Tratando o botao de prosseguir 
+const prosseguir_btn = document.getElementById("prosseguir-btn");
+
+prosseguir_btn.onclick = () => {
+    document.querySelector(".info-boleto").style.display = "none";
+    step1.style.display = "none";
     step2.style.display = "flex";
+
 }
 
 // Tratanto o botao de pagar
