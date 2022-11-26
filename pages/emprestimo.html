@@ -82,7 +82,7 @@
                                 <div class="valor-square1">
                                     <p>Insira o valor desejado</p>
                                     <hr>
-                                    <input type="text" placeholder="Ex: R$ 10.500,00" required>
+                                    <input type="text" id="valor-total" placeholder="Ex: R$ 10.500,00" required>
                                 </div>  
                                 <div class="parcelas-square1">
                                     <p>Quantidade de parcelas</p>
@@ -96,7 +96,7 @@
                                 <div class="info-result">
                                     <p>Dinheiro liberado em até 72h</p>
                                     <div class="taxa">
-                                        <p><span id='parcelas-selected'>00</span>x &ensp; R$<span id="per-month"></span></p>
+                                        <p><span id='parcelas-selected'>12</span>x &ensp; R$<span id="per-month"></span></p>
                                         <p>Taxa 3 a.m</p>
                                     </div>
                                     <p class="type-debit">Débito em conta corrente</p>
@@ -105,7 +105,7 @@
                         </div>
                         
 
-                        <button id="next">Prosseguir</button>
+                        <button id="next2">Prosseguir</button>
                     </div>
 
                     <div class="square2">
@@ -120,7 +120,7 @@
                     <div class="confirm">
                         <p><i class='bx bxs-check-circle'></i>Empréstimo realizado com sucesso!</p>
                         <hr>
-                        <button>Sair</button>
+                        <button onclick="window.location.href='user_page.html';">Sair</button>
                     </div>
                 </div>
             </div>

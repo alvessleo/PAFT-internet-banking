@@ -211,6 +211,10 @@ hr {
     margin-bottom: 0em;
     margin-right: 1em;
   }
+  .main-section .container-main .wrapper .info-boleto .info-options .btn-options button:disabled {
+    background-color: #f2f2f2;
+    color: #000;
+  }
   .main-section .container-main .wrapper .input-codigo {
     padding: 2em;
   }
