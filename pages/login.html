@@ -32,12 +32,7 @@
                     </div>
 
                     <div class="input-fisica">
-                        <input type="text" placeholder=" CEP" required>
-                        <input type="password" placeholder=" Senha" required>
-                    </div>
-    
-                    <div class="input-juridica">
-                        <input type="text" placeholder=" CNPJ" required>
+                        <input id="main-input" type="text" placeholder=" CEP" required>
                         <input type="password" placeholder=" Senha" required>
                     </div>
                 </div>
@@ -52,10 +47,12 @@
                     <div class="forget"><a href="#">Esqueceu a senha?</a></div>
                 </div>
 
-                <button id="acessar">Acessar conta</button>
+                <button id="acessar" onclick="window.location.href='user_page.html';">Acessar conta</button>
             </div>
         </div>
         <img class="background" src="../assets/login-background.jpg" alt="background">
     </section>
+
+    <script src="../js/login.js"></script>
 </body>
 </html>
