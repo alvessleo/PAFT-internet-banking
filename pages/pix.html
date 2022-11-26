@@ -65,7 +65,7 @@
                         <hr>
                         <div class="info-options">
                             <p>Para prosseguir, clique abaixo</p>
-                            <button>Realizar pagamento</button>
+                            <button id="pag-pix">Realizar pagamento</button>
                         </div>
                     </div>
 
@@ -73,11 +73,12 @@
                         <p>Insira uma chave PIX</p>
                         <hr>
                         <input type="text" placeholder=" CPF/CNPJ, celular, e-mail ou aleatória" required>
-                        <button>Prosseguir</button>
+                        <button id="next-step">Prosseguir</button>
                     </div>
 
                     <div class="enviar-pag">
                         <p>Enviar pagamento</p>
+                        <!-- <input type="text" placeholder=" Insira o valor"> -->
                         <hr>
                         <div class="item">
                             <p>Nome do Beneficiário</p>
@@ -98,7 +99,7 @@
                                 <p>Forma de pagamento</p>
                                 <p>Saldo: <span id="saldo">R$ 500,00</span></p>
                             </div>
-                            <button>Pagar</button>
+                            <button id="pagar-pix">Pagar</button>
                         </div>
 
                     </div>
@@ -106,7 +107,7 @@
                     <div class="confirm">
                         <p><i class='bx bxs-check-circle'></i>PIX realizado com sucesso!</p>
                         <hr>
-                        <button>Sair</button>
+                        <button onclick="window.location.href='user_page.html';">Sair</button>
                     </div>
                 </div>
             </div>
