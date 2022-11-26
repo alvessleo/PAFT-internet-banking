@@ -467,6 +467,11 @@ footer .list p a {
   list-style: none;
   text-decoration: none;
   font-weight: 200;
+  transition: 0.5s;
+}
+footer .list p a:hover {
+  margin-left: 0.5em;
+  color: #CC092F;
 }
 footer .list p a img {
   width: 140px;
