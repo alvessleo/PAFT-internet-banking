@@ -192,6 +192,12 @@ header{
 }
 
 .hero-section{
+    .left{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
     .container-slide{
         position: relative;
         width: 100%;
@@ -903,6 +909,27 @@ footer{
 @media only screen and (min-width: 1440px){
 
     .hero-section{
+        position: relative;
+        .left{
+            display: block;
+            position: absolute;
+            z-index: 20;
+            color: $color-white;
+            font-size: 4em;
+            left: calc(20% - 230px);
+            top: calc(65% - 150px);
+            cursor: pointer;
+        }
+        .right{
+            display: block;
+            position: absolute;
+            z-index: 20;
+            color: $color-white;
+            font-size: 4em;
+            right: calc(20% - 230px);
+            top: calc(65% - 150px);
+            cursor: pointer;
+        }
         .container-slide{
             .typo{
                 padding: 2em;

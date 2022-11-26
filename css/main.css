@@ -149,6 +149,12 @@ header nav .menu span {
   transition: 0.3s;
 }
 
+.hero-section .left {
+  display: none;
+}
+.hero-section .right {
+  display: none;
+}
 .hero-section .container-slide {
   position: relative;
   width: 100%;
@@ -757,6 +763,29 @@ footer .list p a img:nth-of-type(1) {
   }
 }
 @media only screen and (min-width: 1440px) {
+  .hero-section {
+    position: relative;
+  }
+  .hero-section .left {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    color: #fff;
+    font-size: 4em;
+    left: calc(20% - 230px);
+    top: calc(65% - 150px);
+    cursor: pointer;
+  }
+  .hero-section .right {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    color: #fff;
+    font-size: 4em;
+    right: calc(20% - 230px);
+    top: calc(65% - 150px);
+    cursor: pointer;
+  }
   .hero-section .container-slide .typo {
     padding: 2em;
     top: calc(85% - 430px);
