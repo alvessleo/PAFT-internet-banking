@@ -589,10 +589,6 @@ footer{
                         margin-left: 1.5em;
                     }
 
-                    .bx-search{
-                        
-                    }
-
                 }
             }
 
@@ -619,9 +615,130 @@ footer{
             }
         }
     }
+
+    .hero-section{
+        .container-slide{
+            .typo{
+                padding: 2em;
+                top: calc(85% - 300px);
+                max-width: 350px;
+                h1{
+                    font-size: 2.7em;
+                }
+                p{
+                    font-size: 1.3em;
+                }
+            }
+            .slider{
+                height: 450px;
+                .slides{
+                    .slide{
+                        img{
+                            height: 450px;
+                        }
+                    }
+
+                    .manual-slide-button{
+                        transform: translateY(-25px);
+                    }
+
+                    .auto-slide-button{
+                        transform: translateY(-25px);
+                    }
+                }
+            }
+        }
+    }
+
+    .features-section{
+        padding: 2em;
+        h1{
+            font-size: 2.5em;
+            margin-bottom: .5em;
+        }
+        .p-typo{
+            font-size: 1.2em;
+            max-width: 350px;
+            margin-bottom: 1em;
+        }
+    }
+
+    .about-card-section{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0em;
+        .about-card-img{
+            display: flex;
+            width: 40%;
+        }
+        .container{
+            padding: 2em;
+            h1{
+                font-size: 2.5em;
+                max-width: 300px;
+            }
+            p{
+                font-size: 1.2em;
+                max-width: 300px;
+                margin-bottom: 3em;
+            }
+            a{
+                font-weight: 500;
+                i{
+                    transform: translateY(1.5px);
+                }
+            }
+        }
+    }
+
+    .get-card-section{
+        display: flex;
+        flex-direction: row;
+        padding: 2em;
+
+        .credit-card-img{
+            display: flex;
+            width: 50%;
+            object-fit: cover;
+        }
+
+        .content{
+            h1{
+                font-size: 2.5em;
+                max-width: 300px;
+            }
+            p{
+                font-size: 1.2em;
+                max-width: 300px;
+            }
+
+            a{
+                margin-top: 3em;
+            }
+        }
+    }
+
+    .download-app-section{
+        display: flex;
+        flex-direction: row;
+        .main-app{
+            object-fit: cover;
+            width: 45%;
+            transform: translateX(0);
+        }
+        .content{
+            padding: 2em;
+        }
+    }
+
+    .best-bank{
+        h1{
+            top: calc(50% - 80px);
+        }
+    }
 }
 
-@media only screen and (min-width: 920px){
+@media only screen and (min-width: 1024px){
     header{
         padding: 25px;
         nav{
@@ -631,9 +748,154 @@ footer{
 
             ul{
                 li{
-                    margin-right: 3em;
+                    margin-right: 2em;
                 }
             }
+
+            .desktop{
+                #open{
+                    margin-right: -1em;
+                }
+            }
+        }
+    }
+
+    .hero-section{
+        .container-slide{
+            display: flex;
+            justify-content: center;
+            .typo{
+                padding: 2em;
+                top: calc(85% - 300px);
+                max-width: 1200px;
+                width: 100%;
+                margin-left: 2em;
+                h1{
+                    font-size: 2.7em;
+                    max-width: 350px;
+                }
+                p{
+                    font-size: 1.3em;
+                    max-width: 350px;
+                }
+            }
+            .slider{
+                height: 450px;
+                .slides{
+                    .slide{
+                        img{
+                            height: 450px;
+                        }
+                    }
+
+                    .manual-slide-button{
+                        transform: translateY(-25px);
+                    }
+
+                    .auto-slide-button{
+                        transform: translateY(-25px);
+                    }
+                }
+            }
+        }
+    }
+
+    .features-section{
+        padding: 2em;
+        h1{
+            font-size: 2.5em;
+            margin-bottom: .5em;
+        }
+        .p-typo{
+            font-size: 1.2em;
+            max-width: 350px;
+            margin-bottom: 1em;
+        }
+    }
+
+    .about-card-section{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0em;
+        .about-card-img{
+            display: flex;
+            width: 40%;
+        }
+        .container{
+            padding: 2em;
+            width: 45%;
+            h1{
+                font-size: 2.5em;
+                max-width: 450px;
+                margin-top: 3em;
+            }
+            p{
+                font-size: 1.2em;
+                max-width: 450px;
+                margin-bottom: 3em;
+            }
+            a{
+                font-weight: 500;
+                font-size: 1.3em;
+                i{
+                    transform: translateY(1.5px);
+                }
+            }
+        }
+    }
+
+    .get-card-section{
+        display: flex;
+        flex-direction: row;
+        padding: 2em;
+
+        .credit-card-img{
+            display: flex;
+            width: 50%;
+            scale: 1.2;
+            object-fit: cover;
+        }
+
+        .content{
+            h1{
+                font-size: 2.5em;
+                max-width: 450px;
+                margin-top: 1.5em;
+            }
+            p{
+                font-size: 1.2em;
+                max-width: 450px;
+                margin-bottom: 3em;
+            }
+
+            a{
+                margin-top: 3em;
+                margin-bottom: 2em;
+                font-weight: 500;
+                font-size: 1.3em;
+            }
+        }
+    }
+
+    .download-app-section{
+        margin-top: 2em;
+        margin-bottom: 2em;
+        .main-app{
+            width: 45%;
+            transform: translateX(0);
+        }
+        .content{
+            padding: 2em;
+        }
+    }
+
+    .best-bank{
+        display: flex;
+        h1{
+            top: calc(50% - 45px);
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
         }
     }
 }
