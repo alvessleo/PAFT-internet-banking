@@ -124,6 +124,12 @@ hr{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    cursor: pointer;
+                    transition: .5s;
+                    
+                    &:hover{
+                        scale: 1.030;
+                    }
                     img{
                         width: 60px;
                         margin-bottom: 2em;
