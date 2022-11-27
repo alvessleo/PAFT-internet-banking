@@ -28,6 +28,9 @@ body {
 .login .container .wrapper {
   padding: 1em;
 }
+.login .container .wrapper .error {
+  color: #CC092F;
+}
 .login .container .wrapper .back {
   display: flex;
   align-items: center;
@@ -146,6 +149,10 @@ body {
 }
 .login .container .wrapper button:hover {
   background-color: #660518;
+}
+.login .container .wrapper button:disabled {
+  background-color: #f2f2f2;
+  color: #000;
 }
 
 @media only screen and (min-width: 768px) {

@@ -61,6 +61,10 @@ body{
         .wrapper{
             padding: 1em;
 
+            .error{
+                color: $color-primary;
+            }
+
             .back{
                 display: flex;
                 align-items: center;
@@ -188,6 +192,11 @@ body{
             button{
                 margin-top: 1em;
                 @include button-red();
+
+                &:disabled{
+                    background-color: $color-light-grey;
+                    color: $color-black;
+                }
             }
         }
     }

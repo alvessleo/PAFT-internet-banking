@@ -16,6 +16,9 @@
         <div class="container">
             <div class="wrapper">
 
+                <div class="alert">
+                    <p>erro de cpf</p>
+                </div>
                 <a class="back" href="../index.html"><i class='bx bx-chevron-left'></i>Voltar</a>
                  
                 <img src="../assets/bradesco-logo-red.png" alt="logo">
@@ -25,29 +28,33 @@
                     <p>Insira as informações para ter acesso a sua conta</p>
                 </div>
 
-                <div class="account-type">
-                    <div class="buttons">
-                        <button class="fisica active">Pessoa Física</button>
-                        <button class="juridica">Pessoa Juridica</button>
+                <form action="">
+                    <div class="account-type">
+                        <div class="buttons">
+                            <button class="fisica active">Pessoa Física</button>
+                            <button class="juridica">Pessoa Juridica</button>
+                        </div>
+    
+                        <div class="input-fisica">
+                            <input id="main-input" type="text" placeholder=" CEP" required>
+                            <input id="password-input" type="password" placeholder=" Senha" required>
+                        </div>
                     </div>
-
-                    <div class="input-fisica">
-                        <input id="main-input" type="text" placeholder=" CEP" required>
-                        <input type="password" placeholder=" Senha" required>
+    
+    
+    
+                    <div class="remember-forget">
+                        <div class="remember">
+                            <input type="checkbox" required>
+                            <p>Lembrar chave de acesso</p>
+                        </div>
+                        <div class="forget"><a href="#">Esqueceu a senha?</a></div>
                     </div>
-                </div>
-
-
-
-                <div class="remember-forget">
-                    <div class="remember">
-                        <input type="checkbox" required>
-                        <p>Lembrar chave de acesso</p>
-                    </div>
-                    <div class="forget"><a href="#">Esqueceu a senha?</a></div>
-                </div>
-
-                <button id="acessar" onclick="window.location.href='user_page.html';">Acessar conta</button>
+    
+                    <!-- onclick="window.location.href='user_page.html';" -->
+                    <button id="acessar" >Acessar conta</button>
+                </form>
+              
             </div>
         </div>
         <img class="background" src="../assets/login-background.jpg" alt="background">
