@@ -4,10 +4,33 @@ const main_input = document.getElementById("main-input");
 // Pessoa fisica
 const person_fisica = document.getElementsByClassName("fisica")[0];
 
+
+
+
+// function mascara(i){
+//     var v = i.value;
+    
+//     if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
+//        i.value = v.substring(0, v.length-1);
+//        return;
+//     }
+    
+//     i.setAttribute("maxlength", "14");
+//     if (v.length == 3 || v.length == 7) i.value += ".";
+//     if (v.length == 11) i.value += "-"; 
+// }
+
+
+main_input.addEventListener("blur", function(){
+    if(main_input.value) main_input.value = main_input.value.match(/.{1,3}/g).join(".").replace(/\.(?=[^.]*$)/,"-");
+});
+
 person_fisica.onclick = () => {
     person_fisica.classList.add("active");
     person_juridica.classList.remove("active");
     main_input.placeholder = " CPF";
+    main_input.maxLength = "11";
+    main_input.value = "";
 }
 
 // Pessoa juridica
@@ -17,6 +40,13 @@ person_juridica.onclick = () => {
     person_juridica.classList.add("active");
     person_fisica.classList.remove("active");
     main_input.placeholder = " CNPJ";
+    main_input.maxLength = "18";
+    main_input.value = ""
+    // main_input.addEventListener('input', function (e) {
+    //     var x = main_input.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,3})(\d{0,3})(\d{0,4})(\d{0,2})/);
+    //     main_input.value = !x[2] ? x[1] : x[1] + '.' + x[2] + '.' + x[3] + '/' + x[4] + (x[5] ? '-' + x[5] : '');
+    // });
+
 }
 
 const init = () => {
@@ -25,17 +55,17 @@ const init = () => {
     const password_input = document.getElementById("password-input");
     // campo de input cpf/cnpj -> main_input
 
+    button_submit.disabled = true;
+
     const validade_CPF = (event) => {
         const input = event.currentTarget;
-        const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const regex = /^(\d{2}\.?\d{3}\.?\d{3}\/?\d{4}-?\d{2}|\d{3}\.?\d{3}\.?\d{3}-?\d{2})$/;
         const cpf_test = regex.test(input.value);
 
         if(!cpf_test) {
             button_submit.setAttribute("disabled", "disabled");
-            input.nextElementSibling.classList.add('error');
-        } else {
+        }else if (cpf_test.value.length === 11 && password_input.value.length >= 8 ) {
             button_submit.removeAttribute("disabled");
-            input.nextElementSibling.classList.remove('error');
         }
     }
 
@@ -44,96 +74,35 @@ const init = () => {
 
         if(input.value.length < 8) {
             button_submit.setAttribute("disabled", "disabled");
-            input.nextElementSibling.classList.add('error');
-        } else {
+            // password_input.classList.add('error');
+        } else if (main_input.value.length >= 11 && input.value.length >= 8){
             button_submit.removeAttribute("disabled");
-            input.nextElementSibling.classList.remove('error');
+            // password_input.classList.remove('error');
         }
-    }
-
-    const errorHandler = () => {
-        button_submit.textContent = "Error :(";
-    }
-
-    const successHandler = () => {
-        button_submit.textContent = "Sent! :)";
     }
 
     main_input.addEventListener('input', validade_CPF);
     password_input.addEventListener('input', validatePassowrd);
 
+
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    
+    async function demo() {
+        for (let i = 1; i < 3; i++) {
+            console.log(`Waiting ${i} seconds...`);
+            await sleep(i * 1000);
+        }
+        window.location.href='user_page.html';
+    }
+
     if(button_submit) {
-        button_submit.addEventListener('click', (event) => {
-            event.preventDefault();
-
+        button_submit.addEventListener('click', () => {
             button_submit.textContent = "Loading...";
-
-            // fetch('https://reqres.in/api/login', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify({
-            //         email: main_input.value,
-            //         password: password_input.value,
-            //     })
-            // }).then((response) => {
-            //     if (response.status !== 200) {
-            //         return errorHandler();
-            //     }
-                
-            //     successHandler();
-                
-            // }).catch(() => {
-            //     errorHandler();
-            // })
+            demo();
         })
-    }
-}
-
-
-
-
-
-
-// 000.000.000-00
-const CPF_mask = (value) => {
-    const string_value = value.toString();
-    return string_value
-      .replace(/\D/g, '')
-      .replace(/(\d{3})(\d)/, '$1.$2')
-      .replace(/(\d{3})(\d)/, '$1.$2')
-      .replace(/(\d{3})(\d{1,2})/, '$1-$2')
-      .replace(/(-\d{2})\d+?$/, '$1');
-};
-  
-// 00.000.000/0000-000
-const CNPJ_mask = (value) => {
-    const string_value = value.toString();
-    return string_value
-      .replace(/\D/g, '')
-      .replace(/(\d{2})(\d)/, '$1.$2')
-      .replace(/(\d{3})(\d)/, '$1.$2')
-      .replace(/(\d{3})(\d)/, '$1/$2')
-      .replace(/(\d{4})(\d{2})/, '$1-$2');
-};
-
-// Regex para mascara CPF
-const CPF_CNPJ_mask = (value) => {
-    const string_value = value.toString();
-    if (string_value.length >= 15) {
-      return CNPJ_mask(value);
-    }
-    return CPF_mask(value);
-  };
-
-const cpfcnpj = /^([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}|[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2})$/
-
-const validadeCPF = () => {
-    if(!cpfcnpj.test(main_input)){
-        console.log("true")
-    } else {
-        console.log("false")
     }
 }
 
