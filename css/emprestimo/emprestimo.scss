@@ -113,6 +113,10 @@ hr{
                     @include button-red();
                     height: 39px;
                     width: 240px;
+                    &:disabled{
+                        background-color: $color-light-grey;
+                        color: $color-black;
+                    }
                 }
             }
 
@@ -198,6 +202,11 @@ hr{
                     @include button-red();
                     width: 100%;
                     height: 39px;
+                    
+                    &:disabled{
+                        background-color: $color-light-grey;
+                        color: $color-black;
+                    }
                 }
             }
 
@@ -230,6 +239,10 @@ hr{
                     @include button-red();
                     width: 100%;
                     height: 39px;
+                    &:disabled{
+                        background-color: $color-light-grey;
+                        color: $color-black;
+                    }
                 }
             }
 

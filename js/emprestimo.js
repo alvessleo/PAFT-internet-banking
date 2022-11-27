@@ -41,24 +41,12 @@ new_emprestimo.onclick = () => {
 // Quando o usuario prosseguir o novo emprestimo para selecionar o dia
 const prosseguir_btn = document.getElementById("next2");
 
-prosseguir_btn.disable = false; // Mudar dps
+prosseguir_btn.disabled = true; // Mudar dps
 
-let valor_validar = document.getElementById("valor-total");
-
-// if (valor_validar.length === 0){
-//     console.log("oi")
-//     prosseguir_btn.disable = true;
-// }else{
-//     prosseguir_btn.disable = false;
-// }
-
-if (prosseguir_btn.disable == false){
-    prosseguir_btn.onclick = () => {
-        prosseguir_btn.style.display = "none";
-        step2.style.display = "flex";
-    }
+prosseguir_btn.onclick = () => {
+    prosseguir_btn.style.display = "none";
+    step2.style.display = "flex";
 }
-
 
 // Quando o usuario clicar em realizar emprestimo
 const finish_btn = document.getElementsByClassName("finish")[0];
@@ -80,6 +68,7 @@ function media(valor, parcela){
 
 full_value.addEventListener('input', function(e){
     document.getElementById("per-month").innerText = media(full_value.value,selectParcelas.value).toFixed(2);
+    verifica_quantidade();
 })
 
 selectParcelas.addEventListener('input', function(e){
@@ -87,3 +76,10 @@ selectParcelas.addEventListener('input', function(e){
     document.getElementById("per-month").innerText = media(full_value.value,selectParcelas.value).toFixed(2);
 })
 
+function verifica_quantidade(){
+    if(full_value.value.length < 3) {
+        prosseguir_btn.disabled = true;
+    } else if (full_value.value.length > 3){
+        prosseguir_btn.disabled = false;
+    }
+}

@@ -81,6 +81,10 @@ hr {
 .main-section .container-main .wrapper .none #next:hover {
   background-color: #660518;
 }
+.main-section .container-main .wrapper .none #next:disabled {
+  background-color: #f2f2f2;
+  color: #000;
+}
 .main-section .container-main .wrapper .square1 {
   background-color: #fff;
   padding: 1em;
@@ -157,6 +161,10 @@ hr {
 .main-section .container-main .wrapper .square1 #next2:hover {
   background-color: #660518;
 }
+.main-section .container-main .wrapper .square1 #next2:disabled {
+  background-color: #f2f2f2;
+  color: #000;
+}
 .main-section .container-main .wrapper .square2 {
   background-color: #fff;
   padding: 1em;
@@ -193,6 +201,10 @@ hr {
 }
 .main-section .container-main .wrapper .square2 .finish:hover {
   background-color: #660518;
+}
+.main-section .container-main .wrapper .square2 .finish:disabled {
+  background-color: #f2f2f2;
+  color: #000;
 }
 .main-section .container-main .wrapper .confirm {
   margin-top: 1em;
