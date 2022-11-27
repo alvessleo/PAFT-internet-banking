@@ -67,6 +67,10 @@ hr {
 .main-section .container-main .wrapper .info-boleto .info-options .btn-options button:hover {
   background-color: #660518;
 }
+.main-section .container-main .wrapper .info-boleto .info-options .btn-options button:disabled {
+  background-color: #f2f2f2;
+  color: #515151;
+}
 .main-section .container-main .wrapper .info-boleto .info-options .btn-options button:nth-of-type(1) {
   margin-bottom: 1em;
 }
@@ -89,6 +93,7 @@ hr {
   margin-bottom: 2em;
   padding: 5px 0em;
   transition: 0.5s;
+  margin-right: 1em;
 }
 .main-section .container-main .wrapper .input-codigo input:focus {
   outline: none;
@@ -109,6 +114,10 @@ hr {
 }
 .main-section .container-main .wrapper .input-codigo button:hover {
   background-color: #660518;
+}
+.main-section .container-main .wrapper .input-codigo button:disabled {
+  background-color: #f2f2f2;
+  color: #515151;
 }
 .main-section .container-main .wrapper .dados-pag {
   background-color: #fff;
@@ -149,6 +158,10 @@ hr {
 .main-section .container-main .wrapper .dados-pag button:hover {
   background-color: #660518;
 }
+.main-section .container-main .wrapper .dados-pag button:disabled {
+  background-color: #f2f2f2;
+  color: #515151;
+}
 .main-section .container-main .wrapper .confirm {
   background-color: #fff;
   padding: 1em;
@@ -178,6 +191,10 @@ hr {
 }
 .main-section .container-main .wrapper .confirm button:hover {
   background-color: #660518;
+}
+.main-section .container-main .wrapper .confirm button:disabled {
+  background-color: #f2f2f2;
+  color: #515151;
 }
 .main-section .container-main .wrapper .confirm button:nth-of-type(2) {
   margin-top: 1em;

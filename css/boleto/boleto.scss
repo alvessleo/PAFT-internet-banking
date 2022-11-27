@@ -26,6 +26,11 @@ $background-color: #ececec;
     &:hover{
         background-color: $hover-red-color;
     }
+
+    &:disabled{
+        background-color: $color-light-grey;
+        color: $color-dark-grey;
+    }
 }
 
 
@@ -130,6 +135,7 @@ hr{
                     margin-bottom: 2em;
                     padding: 5px 0em;
                     transition: 0.5s;
+                    margin-right: 1em;
 
                     &:focus{
                         outline: none;
