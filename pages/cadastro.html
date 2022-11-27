@@ -25,28 +25,32 @@
                     <p>Para prosseguir, tenha seus documentos em mão e siga os passos.</p>
                 </div>
 
-                <div class="input-list">
-                    <div class="one">
-                        <input type="text" placeholder=" Nome" required>
-                        <input type="text" placeholder=" Data de nascimento" required>
-                        <input type="text" placeholder=" CPF" required>
+                <form action="">
+                    <div class="input-list">
+                        <div class="one">
+                            <input id="nome-input" type="text" placeholder=" Nome" maxlength="20" required>
+                            <input id="nascimento-input" type="date" maxlength="8" placeholder=" Data de nascimento" required>
+                            <input id="cpf-input" type="text" placeholder=" CPF" maxlength="11" required>
+                        </div>
+                        <div class="two">
+                            <input id="email-input" type="text" placeholder=" Email" maxlength="40" required>
+                            <input id="pass-input" type="password" placeholder=" Senha" maxlength="22" required>
+                            <input id="confirm-input" type="password" placeholder=" Confirma senha" maxlength="22" required>
+                        </div>
                     </div>
-                    <div class="two">
-                        <input type="text" placeholder=" CEP" required>
-                        <input type="text" placeholder=" Telefone" required>
-                        <input type="text" placeholder=" Email" required>
+    
+                    <div class="politics">
+                        <input type="checkbox" required>
+                        <p>Li e concordo com os <span>Termos e Condições</span> de Abertura de Conta, com a Politica de Privacidade Bradesco</p>
                     </div>
-                </div>
-
-                <div class="politics">
-                    <input type="checkbox" required>
-                    <p>Li e concordo com os <span>Termos e Condições</span> de Abertura de Conta, com a Politica de Privacidade Bradesco</p>
-                </div>
-
-                <button onclick="location.href='login.html'">Criar conta</button>
+                    <!-- onclick="location.href='login.html'" -->
+                    <button id="create-account">Criar conta</button>
+                </form>
+                
             </div>
         </div>
         <img class="background" src="../assets/cadastro-background.jpeg" alt="background">
     </section>
+    <script src="../js/cadastro.js"></script>
 </body>
 </html>

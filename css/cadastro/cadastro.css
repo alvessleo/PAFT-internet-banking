@@ -91,6 +91,10 @@ body {
 .cadastro .container .wrapper button:hover {
   background-color: #660518;
 }
+.cadastro .container .wrapper button:disabled {
+  background-color: #f2f2f2;
+  color: #000;
+}
 
 @media only screen and (min-width: 768px) {
   .cadastro .container {

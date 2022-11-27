@@ -128,6 +128,11 @@ body{
             button{
                 margin-top: 1em;
                 @include button-red();
+                
+                &:disabled{
+                    background-color: $color-light-grey;
+                    color: $color-black;
+                }
             }
         }
     }
