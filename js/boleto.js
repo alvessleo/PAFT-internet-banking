@@ -65,3 +65,11 @@ const another_payment = document.getElementById("another-payment");
 another_payment.onclick = () => {
     window.location.reload();
 }
+
+function onlyNumberKey(evt) {
+    // Apenas caracteres ASCII sao liberados
+    var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+    if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+        return false;
+    return true;
+}

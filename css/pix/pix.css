@@ -99,12 +99,27 @@ hr {
 .main-section .container-main .wrapper .input-chave button:hover {
   background-color: #660518;
 }
+.main-section .container-main .wrapper .input-chave button:disabled {
+  background-color: #f2f2f2;
+  color: #515151;
+}
 .main-section .container-main .wrapper .enviar-pag {
   background-color: #fff;
   padding: 1em;
   margin-top: 1em;
   display: flex;
   flex-direction: column;
+}
+.main-section .container-main .wrapper .enviar-pag .p-head {
+  width: 100%;
+}
+.main-section .container-main .wrapper .enviar-pag .input-valor p {
+  margin-top: 1em;
+  font-weight: 300;
+}
+.main-section .container-main .wrapper .enviar-pag .input-valor #input-valor {
+  width: 15%;
+  margin-bottom: 0.5em;
 }
 .main-section .container-main .wrapper .enviar-pag hr {
   margin: 1em 0;
@@ -163,6 +178,10 @@ hr {
 .main-section .container-main .wrapper .enviar-pag .last-part button:hover {
   background-color: #660518;
 }
+.main-section .container-main .wrapper .enviar-pag .last-part button:disabled {
+  background-color: #f2f2f2;
+  color: #515151;
+}
 .main-section .container-main .wrapper .confirm {
   background-color: #fff;
   padding: 1em;
@@ -195,6 +214,10 @@ hr {
 }
 .main-section .container-main .wrapper .confirm button:nth-of-type(2) {
   margin-top: 1em;
+}
+.main-section .container-main .wrapper .confirm button:disabled {
+  background-color: #f2f2f2;
+  color: #515151;
 }
 
 @media only screen and (min-width: 768px) {

@@ -72,13 +72,20 @@
                     <div class="input-chave">
                         <p>Insira uma chave PIX</p>
                         <hr>
-                        <input type="text" placeholder=" CPF/CNPJ, celular, e-mail ou aleatória" required>
+                        <input id="chave" type="text" placeholder=" CPF/CNPJ, celular, e-mail ou aleatória" maxlength="30" required>
                         <button id="next-step">Prosseguir</button>
                     </div>
 
+
+
                     <div class="enviar-pag">
-                        <p>Enviar pagamento</p>
+                        <p class="p-head">Enviar pagamento</p>
                         <!-- <input type="text" placeholder=" Insira o valor"> -->
+                        <!-- <hr> -->
+                        <div class="input-valor">
+                            <p>Valor desejado</p>
+                            <input id="input-valor" onkeypress="return onlyNumberKey(event)" type="text" placeholder=" Ex: R$ 20,00" maxlength="4" required>
+                        </div>
                         <hr>
                         <div class="item">
                             <p>Nome do Beneficiário</p>

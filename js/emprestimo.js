@@ -82,7 +82,17 @@ selectParcelas.addEventListener('input', function(e){
 function verifica_quantidade(){
     if(full_value.value.length < 3) {
         prosseguir_btn.disabled = true;
-    } else if (full_value.value.length > 3){
+    } else if (full_value.value > 10500){
+        prosseguir_btn.disabled = true;
+    } else{
         prosseguir_btn.disabled = false;
     }
+}
+
+function onlyNumberKey(evt) {
+    // Apenas caracteres ASCII sao liberados
+    var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+    if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+        return false;
+    return true;
 }

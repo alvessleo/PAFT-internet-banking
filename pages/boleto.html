@@ -77,7 +77,7 @@
                         <p>Insira o número do código de barras</p>
                         <hr>
                         <div class="inputs-container">
-                            <input id="codigo-boleto" type="text" placeholder=" Ex: 00000.00000 00000.00000 00000.00000 0 0000" maxlength="35" required>
+                            <input onkeypress="return onlyNumberKey(event)" id="codigo-boleto" type="text" placeholder=" Ex: 00000.00000 00000.00000 00000.00000 0 0000" maxlength="35" required>
                         </div>
 
                         <button id="prosseguir-btn">Prosseguir</button>
