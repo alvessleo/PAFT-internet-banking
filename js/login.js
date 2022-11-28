@@ -57,8 +57,12 @@ const init = () => {
 
         if(!cpf_test) {
             button_submit.setAttribute("disabled", "disabled");
+            input.style.color = "red";
+        }else if(input.value.length >= 11){
+            input.style.color = "green";
         }else if (cpf_test.value.length === 11 && password_input.value.length >= 8 ) {
             button_submit.removeAttribute("disabled");
+            
         }
     }
 
@@ -69,7 +73,11 @@ const init = () => {
 
         if(!cnpj_test) {
             button_submit.setAttribute("disabled", "disabled");
-        }else if (second_input.value.length === 11 && password_input.value.length >= 8 ) {
+            input.style.color = "red";
+        }else if(input.value.length >= 14){
+            input.style.color = "green";
+        }
+        else if (second_input.value.length === 11 && password_input.value.length >= 8 ) {
             button_submit.removeAttribute("disabled");
         }
     }
@@ -98,7 +106,7 @@ const init = () => {
     
     async function demo() {
         for (let i = 1; i < 3; i++) {
-            console.log(`Waiting ${i} seconds...`);
+            console.log(`Esperando ${i} segundos...`);
             await sleep(i * 1000);
         }
         window.location.href='user_page.html';
