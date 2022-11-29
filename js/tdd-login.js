@@ -23,8 +23,11 @@ validateTest('Foi um sucesso!',() =>{
 });
 
 
-function validate_CPF(cpf, senha){
-    return (!isNaN(cpf) && cpf.value.length < 11 !== "CPF inválido") 
+function validate_CPF(cpf, cnpj, senha){
+    if(cpf.value.length < 11 !== "CPF inválido" && senha.value.length < 8 && cnpj.value.length < 14){
+        return
+    }
+    
 }
 
 // function validateDate(date){
@@ -33,7 +36,7 @@ function validate_CPF(cpf, senha){
 
 
 validateTest('Validando login', () => {
-    assert(validate_CPF("09398483920", "12345678"))
+    assert(validate_CPF("093.984.839-20", "56.454.353/5353-45", "12345678910"))
 })
 
 // validateTest('Validando datas',() => {
@@ -46,14 +49,20 @@ document.addEventListener('submit',function(event){
     event.preventDefault();
     var elements = document.querySelector('#login');
     var cpf = elements['cpf'].value;
+    var cnpj = elements['cnpj'].value;
     var senha = elements['senha'].value;
 
     let input_cpf = document.getElementById("main-input");
     input_cpf = cpf;
     let input_senha = document.getElementById("password-input");
     input_senha = senha;
+    let input_cnpj = document.getElementById("second-input");
+    input_cnpj = cnpj;
 
-    elements.submit();
+    elements['cpf'].value = '';
+    elements['cnpj'].value = '';
+    elements['senha'].value = '';
+    // elements.submit();
 });
 
 // document.addEventListener('submit',function(event){
@@ -67,18 +76,19 @@ document.addEventListener('submit',function(event){
 //     elements['tweet'].value = '';
 // });
 
-validateTest('Log In', function(){
-    var elements = document.querySelector('#login');
-    elements['cpf'].value = '09398483920';
-    elements['senha'].value = '12345678';
+// validateTest('Log In', function(){
+//     var elements = document.querySelector('#login');
+//     elements['cpf'].value = '093.984.839-20';
+//     elements['cnpj'].value = '56.454.353/5353-45';
+//     elements['senha'].value = '12345678';
 
-    var evt = new Event("submit",{"bubbles":true,"cancelable":true});
-    elements.dispatchEvent(evt);
+//     var evt = new Event("submit",{"bubbles":true,"cancelable":true});
+//     elements.dispatchEvent(evt);
 
-    var login = document.querySelector('#login');
-    assert(login.innerHTML.toLowerCase().includes("<input>09398483920</input>"));
-    login.innerHTML = '';
-});
+//     var login = document.querySelector('#login');
+//     assert(login.innerHTML.includes("<input id='main-input'>093.984.839-20</input>", "<input id='second-input'>56.454.353/5353-45</input>", "<input id='password-input'>12345678</input>"));
+//     login.innerHTML = '';
+// });
 
 
 // validateTest('add new tweet',function(){
