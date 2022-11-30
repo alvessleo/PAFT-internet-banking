@@ -72,7 +72,7 @@
                     <div class="input-chave">
                         <p>Insira uma chave PIX</p>
                         <hr>
-                        <input id="chave" type="text" placeholder=" CPF/CNPJ, celular, e-mail ou aleatória" maxlength="30" required>
+                        <input id="chave" onkeypress="return onlyNumberKey(event)" type="text" placeholder=" CPF/CNPJ, celular, e-mail ou aleatória" maxlength="30" required>
                         <button id="next-step">Prosseguir</button>
                     </div>
 
