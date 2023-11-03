@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/cadastro/cadastro.css">
     <title>Cadastro</title>
 </head>
+
 <body>
     <section class="cadastro">
         <div class="container">
             <div class="wrapper">
 
                 <a class="back" href="../index.html"><i class='bx bx-chevron-left'></i>Voltar</a>
-                 
-                <img src="../assets/bradesco-logo-red.png" alt="logo">
+
+                <img src="../assets/bradesco-logo-RED.png" alt="logo">
 
                 <div class="typo">
                     <h1>Seja bem vindo ao Bradesco, seu novo internet banking</h1>
@@ -29,28 +32,32 @@
                     <div class="input-list">
                         <div class="one">
                             <input id="nome-input" type="text" placeholder=" Nome" maxlength="20" required>
-                            <input id="nascimento-input" type="date" maxlength="8" placeholder=" Data de nascimento" required>
+                            <input id="nascimento-input" type="date" maxlength="8" placeholder=" Data de nascimento"
+                                required>
                             <input id="cpf-input" type="text" placeholder=" CPF" maxlength="11" required>
                         </div>
                         <div class="two">
                             <input id="email-input" type="text" placeholder=" Email" maxlength="40" required>
                             <input id="pass-input" type="password" placeholder=" Senha" maxlength="22" required>
-                            <input id="confirm-input" type="password" placeholder=" Confirma senha" maxlength="22" required>
+                            <input id="confirm-input" type="password" placeholder=" Confirma senha" maxlength="22"
+                                required>
                         </div>
                     </div>
-    
+
                     <div class="politics">
                         <input id="checkbox" type="checkbox" required>
-                        <p>Li e concordo com os <span>Termos e Condições</span> de Abertura de Conta, com a Politica de Privacidade Bradesco</p>
+                        <p>Li e concordo com os <span>Termos e Condições</span> de Abertura de Conta, com a Politica de
+                            Privacidade Bradesco</p>
                     </div>
                     <!-- onclick="location.href='login.html'" -->
                     <button id="create-account">Criar conta</button>
                 </form>
-                
+
             </div>
         </div>
         <img class="background" src="../assets/cadastro-background.jpeg" alt="background">
     </section>
     <script src="../js/cadastro.js"></script>
 </body>
+
 </html>

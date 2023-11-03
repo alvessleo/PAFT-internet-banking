@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/login/login.css">
     <title>Login</title>
 </head>
+
 <body>
     <section class="login">
         <div class="container">
@@ -20,8 +23,8 @@
                     <p>erro de cpf</p>
                 </div> -->
                 <a class="back" href="../index.html"><i class='bx bx-chevron-left'></i>Voltar</a>
-                 
-                <img src="../assets/bradesco-logo-red.png" alt="logo">
+
+                <img src="../assets/bradesco-logo-RED.png" alt="logo">
 
                 <div class="typo">
                     <h1>Bem vindo de volta</h1>
@@ -34,16 +37,18 @@
                             <button class="fisica active">Pessoa Física</button>
                             <button class="juridica">Pessoa Juridica</button>
                         </div>
-    
+
                         <div class="input-fisica">
-                            <input id="main-input" name="cpf" type="text" placeholder=" CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required maxlength="11">
-                            <input id="second-input" name="cnpj" type="text" placeholder=" CNPJ" required maxlength="18">
+                            <input id="main-input" name="cpf" type="text" placeholder=" CPF"
+                                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required maxlength="11">
+                            <input id="second-input" name="cnpj" type="text" placeholder=" CNPJ" required
+                                maxlength="18">
                             <input id="password-input" name="senha" type="password" placeholder=" Senha" required>
                         </div>
                     </div>
-    
-    
-    
+
+
+
                     <div class="remember-forget">
                         <div class="remember">
                             <input type="checkbox" id="checkbox">
@@ -51,11 +56,11 @@
                         </div>
                         <div class="forget"><a href="#">Esqueceu a senha?</a></div>
                     </div>
-    
+
                     <!-- onclick="window.location.href='user_page.html';" -->
-                    <button id="acessar" >Acessar conta</button>
+                    <button id="acessar">Acessar conta</button>
                 </form>
-              
+
             </div>
         </div>
         <img class="background" src="../assets/login-background.jpg" alt="background">
@@ -64,4 +69,5 @@
     <script src="../js/login.js"></script>
     <script src="../js/tdd-login.js"></script>
 </body>
+
 </html>
